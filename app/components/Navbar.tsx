@@ -27,7 +27,7 @@ export default function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl flex items-center gap-2">
+    <a className="btn btn-ghost text-2xl flex items-center gap-2" href="/">
      <img src="/favicon.ico" alt="Roastify Logo" className="w-6 h-6" />
      Roastify
     </a>
