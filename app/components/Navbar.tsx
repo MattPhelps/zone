@@ -27,7 +27,10 @@ export default function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl">Roastify</a>
+    <a className="btn btn-ghost text-2xl flex items-center gap-2">
+     <img src="/favicon.ico" alt="Roastify Logo" className="w-6 h-6" />
+     Roastify
+    </a>
   </div>
   {/* Centered items in the navbar not needed
   <div className="navbar-center flex-1">

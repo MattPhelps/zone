@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.11.10",
     "@tailwindcss/typography": "^0.5.15",
     "next": "15.1.2",
     "react": "^19.0.0",
