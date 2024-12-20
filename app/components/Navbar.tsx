@@ -1,8 +1,8 @@
 export default function Navbar() {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100"> 
   <div className="navbar-start">
-    <div className="dropdown">
+   {/*  <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Navbar() {
         </li>
         <li><a>Item 3</a></li>
       </ul>
-    </div>
+    </div> */}
     <a className="btn btn-ghost text-2xl flex items-center gap-2" href="/">
      <img src="/favicon.ico" alt="Roastify Logo" className="w-6 h-6" />
      Roastify
