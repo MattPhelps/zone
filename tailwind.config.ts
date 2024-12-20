@@ -1,18 +1,13 @@
-import type { Config } from "tailwindcss";
-
-export default {
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}", // Include all files in the "app" directory
+    "./components/**/*.{js,ts,jsx,tsx}", // Include your components directory if separate
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    themes: ["fantasy"], // DaisyUI theme configuration
+  },
+};
