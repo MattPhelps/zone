@@ -1,2 +1,2 @@
-# roastify
+# Roastify
 Roast me 
