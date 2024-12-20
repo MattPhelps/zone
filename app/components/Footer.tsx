@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="footer bg-base-200 text-base-content p-10">
             <aside>
             <img src="/favicon.ico" alt="Roastify Logo" className="w-12 h-12 " />
-                <p className="text-lg">
+                <p className="text-base">
                     <b>Roastify</b>
                     <br />
                     Humbling people since 2024.
@@ -13,13 +13,13 @@ export default function Footer() {
 
             </aside>
             <nav>
-                <h4 className="footer-title text-lg">Links</h4>
-                <a className="link link-hover text-lg">About</a>
+                <h4 className="footer-title text-base">Links</h4>
+                <a className="link link-hover text-base">About</a>
             </nav>
             <nav>
-                <h6 className="footer-title text-lg">Legal</h6>
-                <a className="link link-hover text-lg" href="/terms">Terms of use</a>
-                <a className="link link-hover text-lg" href="/privacy">Privacy policy</a>
+                <h6 className="footer-title text-base">Legal</h6>
+                <a className="link link-hover text-base" href="/terms">Terms of use</a>
+                <a className="link link-hover text-base" href="/privacy">Privacy policy</a>
             </nav>
         </footer>
     );

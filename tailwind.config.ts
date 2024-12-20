@@ -11,3 +11,5 @@ module.exports = {
     themes: ["bumblebee"], // DaisyUI theme configuration
   },
 };
+
+// #F2F2F2
