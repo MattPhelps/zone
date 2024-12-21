@@ -2,8 +2,9 @@
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
-
 import Rating from "@/app/components/Rating";
+import { Roasts } from "@/app/components/Roasts";
+import UploadDropzone from "@/app/components/UploadDropZone";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
@@ -11,11 +12,16 @@ function UploadPageContent() {
 
   if (!imageUrl) {
     return (
-      <div className="hero flex items-center justify-center min-h-screen">
-        <div className="hero-content flex flex-col lg:flex-row items-center gap-12 lg:gap-24 max-w-4xl">
-          No Image Uploaded
-        </div>
-      </div>
+      <div className="hero min-h-screen -mt-40 flex items-center justify-center">
+            
+              
+              <div className="text-center lg:text-left max-w-md">
+                <p className="py-6">
+                  Upload an image of a person who needs roasting.
+                </p>
+                <UploadDropzone />
+              </div>
+          </div>
     );
   }
 
@@ -29,31 +35,32 @@ function UploadPageContent() {
   return (
     <section className="hero flex flex-col items-center justify-start min-h-screen pt-0 lg:pt-0">
       <div className="hero-content flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-4xl mt-4 lg:mt-0">
+
         {/* Rendered Image */}
+        <div className="sticky top-0 flex-shrink-0">
         <img
           src={imageUrl}
           alt="Roasted mfer"
           className="w-64 sm:w-80 lg:w-[22rem] rounded-lg shadow-xl"
         />
+        </div>
 
         {/* Text Section */}
-        <div className="text-center lg:text-left max-w-md">
-          {[...Array(4)].map((_, index) => (
-            <div key={index} className="mb-4">
-              <h1 className="text-5xl font-bold">Roast Me</h1>
-              <p className="py-4">Upload an image of a person who needs roasting.</p>
-            </div>
-          ))}
+        <div className="flex-1 overflow-y-auto max-h-screen px-4 lg:pl-8 scroll-smooth">
+         <div className="text-center lg:text-left max-w-md">
+          <Roasts />
+         </div>
         </div>
       </div>
 
-      {/* Download Button */}
-      <button
-        className="btn btn-lg btn-primary mt-6 lg:mt-8"
+     {/* Download Button */}
+        <button
+        className="btn btn-lg btn-primary mt-8 lg:mt-24 transform transition-transform duration-200 hover:scale-105"
         onClick={handleDownload}
-      >
+        >
         Download Roast
-      </button>
+        </button>
+
 
       {/* Desktop-Only Rating in Bottom Right */}
       <div className="hidden lg:flex fixed rounded-lg items-center">

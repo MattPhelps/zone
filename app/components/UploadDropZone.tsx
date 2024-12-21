@@ -66,7 +66,7 @@ export default function UploadDropzone() {
         className="hidden"
         onChange={handleFileUpload}
       />
-      <button className="btn btn-lg btn-primary mt-10 mb-5">Upload Image</button>
+      <button className="btn btn-lg btn-primary mt-10 mb-5 transform transition-transform duration-200 hover:scale-105">Upload Image</button>
       <label className="text-center text-gray-600">
         <p className="text-lg mb-5">or drop a file</p>
       </label>
