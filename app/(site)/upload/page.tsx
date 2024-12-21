@@ -1,7 +1,8 @@
 "use client";
 import { useSearchParams } from "next/navigation";
+import React, { Suspense } from "react";
 
-export default function UploadPage() {
+function UploadPageContent() {
   const searchParams = useSearchParams();
   const imageUrl = searchParams.get("imageUrl");
 
@@ -18,7 +19,7 @@ export default function UploadPage() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = imageUrl; // URL of the rendered image
-    link.download = "roast-render.png"; // File name for the downloaded image
+    link.download = "roasted.png"; // File name for the downloaded image
     link.click();
   };
 
@@ -51,5 +52,19 @@ export default function UploadPage() {
         Download Image
       </button>
     </section>
+  );
+}
+
+export default function UploadPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center min-h-screen">
+          <p>Loading...</p>
+        </div>
+      }
+    >
+      <UploadPageContent />
+    </Suspense>
   );
 }

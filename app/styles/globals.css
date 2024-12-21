@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,7 +17,15 @@
 }
 
 body {
+  @apply font-sans; /* Roboto for body text */
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  @apply font-heading; /* Poppins for headings */
+}
+
+p {
+  font-size: 1rem; /* Keep paragraph font size consistent */
 }
