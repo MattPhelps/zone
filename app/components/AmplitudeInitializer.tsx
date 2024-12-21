@@ -1,4 +1,3 @@
-// components/AmplitudeInitializer.tsx
 "use client";
 
 import { useEffect } from "react";
