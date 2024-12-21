@@ -1,6 +1,9 @@
 "use client";
+import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
+
+import Rating from "@/app/components/Rating";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
@@ -46,16 +49,30 @@ function UploadPageContent() {
 
       {/* Download Button */}
       <button
-        className="btn btn-primary mt-6 lg:mt-8"
+        className="btn btn-lg btn-primary mt-6 lg:mt-8"
         onClick={handleDownload}
       >
-        Download Image
+        Download Roast
       </button>
+
+      {/* Desktop-Only Rating in Bottom Right */}
+      <div className="hidden lg:flex fixed rounded-lg items-center">
+        <Rating />
+      </div>
     </section>
   );
 }
 
 export default function UploadPage() {
+    // Disable scrolling when the component is mounted
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, []);
+
+
   return (
     <Suspense
       fallback={
