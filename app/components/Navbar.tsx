@@ -27,7 +27,7 @@ export default function Navbar() {
      <img src="/favicon.ico" alt="Roastify Logo" className="w-6 h-6" />
      Roastify
     </a>
-    <ul className="menu menu-horizontal text-lg px-1 justify-center hidden">
+    <ul className="menu menu-horizontal text-lg px-1 justify-center">
       <li><a href="/upload">Roast Me</a></li>
     </ul>
   </div>
