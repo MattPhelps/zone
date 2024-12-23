@@ -26,11 +26,8 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="/generate">Generate Roast</a>
-            </li>
-            <li>
-              <a href="/pricing">Premium Roast Pricing</a>
-            </li>
+            <a href="/upload">Estimate Body Fat</a>
+          </li>
           </ul>
         </div>
 
@@ -44,16 +41,13 @@ export default function Navbar() {
             alt="Roast Generator Logo"
             className="w-6 h-6"
           />
-          Roast Generator
+          Body Fat Estimator
         </a>
 
         {/* Desktop Menu */}
         <ul className="menu menu-horizontal text-lg px-1 hidden lg:flex">
           <li>
-            <a href="/generate">Generate Roast</a>
-          </li>
-          <li>
-            <a href="/pricing">Premium Roast Pricing</a>
+            <a href="/upload">Estimate Body Fat</a>
           </li>
         </ul>
       </div>

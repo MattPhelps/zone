@@ -20,7 +20,7 @@ export default function Rating() {
 
   return (
     <div className="fixed bottom-4 right-4 text-black p-4 rounded-lg shadow-lg flex items-center space-x-4">
-      <span className="text-lg">Rate this Roast</span>
+      <span className="text-lg">Rate this Estimate</span>
       <div className="rating flex items-center gap-2">
         <input
           type="radio"

@@ -4,7 +4,7 @@ export default function Footer() {
             <aside>
             <img src="/favicon.ico" alt="Roast Generator Logo" className="w-12 h-12 " />
                 <p className="text-base">
-                    <b className="font-heading">Roast Generator</b>
+                    <b className="font-heading">Body Fat Estimator</b>
                     <br />
                     Humbling people since 2024.
                     <br />
@@ -26,6 +26,7 @@ export default function Footer() {
             <nav>
                 <h6 className="footer-title font-heading text-base">More From The Maker</h6>
                 <a className="link link-hover text-base" href="https://roastify.ai/">Roastify</a>
+                <a className="link link-hover text-base" href="https://roastgenerator.com/">Roast Generator</a>
             </nav>
         </footer>
     );

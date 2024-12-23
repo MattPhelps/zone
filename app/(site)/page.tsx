@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import Input from "../components/Input";
+import Hero from "../components/Hero";
 
-const title = "Roast Generator – Brutal Roasts Made With AI";
-const description = "Inspired by the r/RoastMe subreddit, Roast Generator is an AI that give you brutal roasts about someone - try now!";
+const title = "Body Fat Estimator – What % Body Fat Are You?";
+const description = "";
 
 export const metadata: Metadata = {
   title: title,
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
    <>
-      <Input />
+      <Hero />
    </>
   );
   
