@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Hero() {
+export default function Input() {
   const [formData, setFormData] = useState({
     name: "",
     gender: "",
@@ -33,6 +33,10 @@ export default function Hero() {
       relationshipToUser: "",
       hobbies: "",
     });
+  };
+
+  const handlePremium = () => {
+    window.location.href = "/pricing";
   };
 
   // Generate the roast
@@ -120,23 +124,28 @@ export default function Hero() {
               value={formData.hobbies}
               onChange={handleInputChange}
             ></textarea>
-            <button className="btn btn-lg btn-accent w-full">Generate Roast</button>
+            <button className="btn btn-lg btn-primary text-white w-full">Generate Roast</button>
           </form>
         ) : (
-          <div className="text-center max-w-lg">
-            <h1 className="text-4xl font-bold mb-12">🎤 {formData.name}'s Roast:</h1>
-            <div className="chat chat-end">
-              <div className="chat-bubble text-white chat-bubble-secondary">{roast}</div>
+          <div className="text-center w-full lg:flex lg:items-center lg:gap-12 lg:justify-center">
+            {/* Roast Text Section */}
+            <div className="lg:w-1/2">
+              <h1 className="text-4xl font-bold mb-6">🎤 Roasted!</h1>
+              <div className="chat chat-start mx-auto max-w-md">
+                <div className="chat-bubble text-white chat-bubble-secondary">{roast}</div>
+              </div>
             </div>
-            <div className="flex flex-col items-center gap-4 mt-12">
-              <button className="btn btn-lg btn-accent" onClick={handleReset}>
-                Generate Another Roast
+
+            {/* Buttons Section */}
+            <div className="flex flex-col items-center gap-4 mt-12 lg:mt-0 lg:w-1/2">
+              <button className="btn btn-lg text-white btn-primary w-3/4" onClick={handleReset}>
+                Generate New Roast
               </button>
               <button
-                className="btn btn-lg btn-outline btn-primary"
-                onClick={handleReset}
+                className="btn btn-lg btn-outline text-white btn-accent w-3/4"
+                onClick={handlePremium}
               >
-                Premium Roast
+                🔥 Premium Roast
               </button>
             </div>
           </div>

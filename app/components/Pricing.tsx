@@ -13,14 +13,14 @@ export default function Pricing() {
         oldPrice: "$5", // Old price for strikethrough
         price: "$3",
         buttonText: "Choose Basic",
-        checkoutLink: "https://checkout.example.com/basic-plan",
+        checkoutLink: "https://buy.stripe.com/5kA9Boby28vFcEgfZ3",
       },
       {
         title: "10 Roasts",
         oldPrice: "$17", // Old price for strikethrough
         price: "$9",
         buttonText: "Choose Premium",
-        checkoutLink: "https://checkout.example.com/premium-plan",
+        checkoutLink: "https://buy.stripe.com/4gwaFs1XsdPZ8o07sy",
       },
     ];
   

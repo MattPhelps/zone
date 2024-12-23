@@ -1,11 +1,8 @@
 import { Metadata } from "next";
-import Hero from "../components/Hero";
-
-import Carousel from "../components/Carousel";
-import Accordion from "../components/Accordion";
+import Input from "../components/Input";
 
 const title = "Roast Generator – Brutal Roasts Made With AI";
-const description = "Inspired by the r/RoastMe subreddit, Roast Generator is an AI that give your brutal roasts about someone - try now!";
+const description = "Inspired by the r/RoastMe subreddit, Roast Generator is an AI that give you brutal roasts about someone - try now!";
 
 export const metadata: Metadata = {
   title: title,
@@ -15,9 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
    <>
-      <Hero />
-      {/* <Carousel />
-      {/* <Accordion /> */}
+      <Input />
    </>
   );
   
