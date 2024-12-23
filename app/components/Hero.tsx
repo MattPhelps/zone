@@ -11,9 +11,9 @@ export default function Hero() {
           alt="Box Office"
         />
         <div className="text-center lg:text-left max-w-md">
-          <h1 className="text-5xl font-bold">Roast Me</h1>
+          <h1 className="text-5xl font-bold">Roast Generator</h1>
           <p className="py-6">
-            Upload an image of a person who needs roasting.
+            Generate a brutal roast with AI.
           </p>
           <UploadDropzone />
         </div>
