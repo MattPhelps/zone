@@ -12,12 +12,14 @@ export default function Hero() {
   });
   const [showResults, setShowResults] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setShowResults(true); // Show the results view
   };
@@ -127,10 +129,7 @@ export default function Hero() {
               <div className="chat-bubble text-white chat-bubble-secondary">{roast}</div>
             </div>
             <div className="flex flex-col items-center gap-4 mt-12">
-              <button
-                className="btn btn-lg btn-accent"
-                onClick={handleReset}
-              >
+              <button className="btn btn-lg btn-accent" onClick={handleReset}>
                 Generate Another Roast
               </button>
               <button
@@ -141,7 +140,6 @@ export default function Hero() {
               </button>
             </div>
           </div>
-
         )}
       </div>
     </div>
