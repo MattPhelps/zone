@@ -8,6 +8,8 @@ export default function Footer() {
                     <br />
                     Humbling people since 2024.
                     <br />
+                    Made by <a href="https://x.com/skoyig">Matt.</a>
+                    <br />
                     Copyright 2025 - all rights reserved.
                 </p>
 
