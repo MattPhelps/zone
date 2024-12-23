@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Hero from "../components/Hero";
+
 import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";
 
@@ -15,7 +16,7 @@ export default function Home() {
   return (
    <>
       <Hero />
-      <Carousel />
+      {/* <Carousel />
       {/* <Accordion /> */}
    </>
   );
