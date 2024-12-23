@@ -1,7 +1,7 @@
 export const metadata = {
-    title: "Privacy Policy - Roastify",
+    title: "Privacy Policy - Roast Generator",
     description:
-      "Learn how we collect, use, and protect your personal information at Roastify.",
+      "Learn how we collect, use, and protect your personal information at Roast Generator.",
   };
   
   export default function PrivacyPolicy() {
@@ -9,7 +9,7 @@ export const metadata = {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
         <p className="text-lg mb-4">
-          Welcome to Roastify! Your privacy is important to us. This Privacy
+          Welcome to Roast Generator! Your privacy is important to us. This Privacy
           Policy explains how we collect, use, and protect your information.
         </p>
   

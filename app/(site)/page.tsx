@@ -3,8 +3,8 @@ import Hero from "../components/Hero";
 import Carousel from "../components/Carousel";
 import Accordion from "../components/Accordion";
 
-const title = "Roastify – Roast Me AI";
-const description = "Inspired by the r/RoastMe subreddit, Roastify is an AI that brutally roasts your appearance - try now!";
+const title = "Roast Generator – Brutal Roasts Made With AI";
+const description = "Inspired by the r/RoastMe subreddit, Roast Generator is an AI that give your brutal roasts about someone - try now!";
 
 export const metadata: Metadata = {
   title: title,
