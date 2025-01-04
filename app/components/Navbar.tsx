@@ -1,4 +1,25 @@
+"use client";
+import { trackEvent } from "../libs/amplitude";
+
 export default function Navbar() {
+  const handleClickPricing = () => {
+    trackEvent("Go To Pricing", {
+      location: "navbar",
+    });
+  };
+
+  const handleClickFAQs = () => {
+    trackEvent("Go To FAQs", {
+      location: "navbar",
+    });
+  };
+
+  const handleClickExamples = () => {
+    trackEvent("Go To Examples", {
+      location: "navbar",
+    });
+  };
+
   return (
     <div className="navbar bg-base-100">
       {/* Navbar Start */}
@@ -26,8 +47,20 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-            <a href="/upload">Estimate Body Fat</a>
-          </li>
+              <a href="/#examples" onClick={handleClickExamples}>
+                Examples
+              </a>
+            </li>
+            <li>
+              <a href="/#faq" onClick={handleClickFAQs}>
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="/#pricing" onClick={handleClickPricing}>
+                Pricing
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -47,10 +80,28 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="menu menu-horizontal text-lg px-1 hidden lg:flex">
           <li>
-            <a href="/upload">Estimate Body Fat</a>
+            <a href="/#examples" onClick={handleClickExamples}>
+              Examples
+            </a>
+          </li>
+          <li>
+            <a href="/#faq" onClick={handleClickFAQs}>
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a href="/#pricing" onClick={handleClickPricing}>
+              Pricing
+            </a>
           </li>
         </ul>
       </div>
+
+      {/* Navbar End 
+      <div className="navbar-end pr-4 hidden lg:flex">
+        <a className="btn text-lg ml-auto font-normal" href="/login">Login</a>
+      </div>
+      */}
     </div>
   );
 }

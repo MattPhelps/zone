@@ -6,8 +6,6 @@ export default function Footer() {
                 <p className="text-base">
                     <b className="font-heading">Body Fat Estimator</b>
                     <br />
-                    Humbling people since 2024.
-                    <br />
                     Made with 🧃 by <a href="https://x.com/skoyig" className="underline">Matt</a>
                     <br />
                     Copyright 2025 - all rights reserved.
@@ -15,18 +13,18 @@ export default function Footer() {
 
             </aside>
             <nav>
-                <h4 className="footer-title font-heading text-base">Links</h4>
-                <a className="link link-hover text-base">About</a>
+                <h4 className="footer-title font-heading text-lg">Links</h4>
+                <p><a className="link link-hover" href="#pricing">Pricing</a></p>
             </nav>
             <nav>
-                <h6 className="footer-title font-heading text-base">Legal</h6>
-                <a className="link link-hover text-base" href="/terms">Terms of use</a>
-                <a className="link link-hover text-base" href="/privacy">Privacy policy</a>
+                <h4 className="footer-title font-heading text-lg">Legal</h4>
+                <p><a className="link link-hover" href="/terms">Terms of use</a></p>
+                <p><a className="link link-hover" href="/privacy">Privacy policy</a></p>
             </nav>
             <nav>
-                <h6 className="footer-title font-heading text-base">More From The Maker</h6>
-                <a className="link link-hover text-base" href="https://roastify.ai/">Roastify</a>
-                <a className="link link-hover text-base" href="https://roastgenerator.com/">Roast Generator</a>
+                <h4 className="footer-title font-heading text-lg">From The Maker</h4>
+                <p><a className="link link-hover " href="https://roastgenerator.com/">Roast Generator</a></p>
+              <p><a className="link link-hover" href="https://comebackgenerator.com/">Comeback Generator</a></p>
             </nav>
         </footer>
     );

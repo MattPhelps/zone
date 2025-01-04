@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="text-center lg:text-left max-w-md">
           <h1 className="text-4xl font-bold">Body Fat Estimator</h1>
           <p className="py-6">
-            Upload an image a find out your bodyfat.
+            Upload an image and find out your bodyfat.
           </p>
           <UploadDropzone />
         </div>

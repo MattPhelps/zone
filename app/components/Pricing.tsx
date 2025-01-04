@@ -1,74 +1,89 @@
+
 export default function Pricing() {
-    const commonFeatures = [
-      "Complete Roast Speech",
-      "Adjustable Roast Intensity",
-      "Customizable Roast Memes",
-      "Personalized Appearance Roast",
-      "Themed Roasts for Any Occasion",
-    ];
-  
-    const pricingPlans = [
-      {
-        title: "1 Roast",
-        oldPrice: "$5", // Old price for strikethrough
-        price: "$3",
-        buttonText: "Choose Basic",
-        checkoutLink: "https://buy.stripe.com/5kA9Boby28vFcEgfZ3",
-      },
-      {
-        title: "10 Roasts",
-        oldPrice: "$17", // Old price for strikethrough
-        price: "$9",
-        buttonText: "Choose Premium",
-        checkoutLink: "https://buy.stripe.com/4gwaFs1XsdPZ8o07sy",
-      },
-    ];
-  
-    return (
-      <div className="flex flex-col items-center gap-8 p-6 lg:flex-row lg:justify-center lg:gap-24 mt-12">
-        {pricingPlans.map((plan, index) => (
-          <div
-            key={index}
-            className="card bg-base-100 w-full max-w-md shadow-xl"
-          >
+
+  return (
+    <div id="pricing" className="hero min-h-screen  flex items-center justify-center">
+      <div className="flex flex-col items-center text-center">
+        <h1 className="text-3xl lg:text-5xl font-bold">Serve Up Scalding Hot Roasts</h1>
+        <div className="flex flex-col items-center gap-8 p-6 lg:flex-row lg:justify-center lg:gap-24 mt-12">
+          <div className="card bg-base-100 w-full max-w-lg shadow-xl">
             <div className="card-body">
-              <h2 className="card-title justify-center text-4xl font-bold">
-                {plan.title}
-                {plan.title === "10 Roasts" && (
-                  <div className="badge text-white badge-success">BEST</div>
-                )}
+              <h2 className="card-title justify-center text-3xl lg:text:4xl font-bold">
+                10 Roasts
               </h2>
               <div className="flex justify-center items-center mr-12 mt-6">
-                <span className="text-xl text-gray-500 line-through mr-2">
-                  {plan.oldPrice}
+                <span className="text-lg text-gray-500 line-through mr-2">
+                  $7.95
                 </span>
-                <span className="text-4xl font-extrabold">{plan.price}</span>
+                <span className="text-4xl font-extrabold">$3.95</span>
+                <span className="text-xs text-gray-500 ml-2">USD</span>
               </div>
               <ul className="mt-4 space-y-2">
-                {commonFeatures.map((feature, i) => (
-                  <li key={i} className="flex items-center text-gray-500">
-                    <span className="text-green-500 mr-2">✔️</span>
-                    {feature}
-                  </li>
-                ))}
+                <li className="flex items-center text-gray-500">
+                  <span className="text-green-500 mr-2">✔️</span>
+                  Generate 10 roasts
+                </li>
+                <li className="flex items-center text-gray-500">
+                  <span className="text-green-500 mr-2">✔️</span>
+                  7 day money-back guarantee
+                </li>
               </ul>
               <div className="card-actions mt-6">
                 <a
-                  href={plan.checkoutLink}
+                  href="https://buy.stripe.com/8wM3d07hM9zJdIk4gr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary w-full"
+                  className="btn btn-primary text-lg text-white w-full"
                 >
-                  {plan.buttonText}
+                  Get 10 Roasts
                 </a>
                 <p className="text-sm text-center text-gray-500 mt-2">
-                  One-time payment. No subscription.
+                  🔒 Pay once. Use forever.
                 </p>
               </div>
             </div>
           </div>
-        ))}
+
+          <div className="card bg-base-100 w-full max-w-lg shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title justify-center text-3xl lg:text:4xl font-bold">
+                Unlimited Roasts
+                <div className="badge text-white badge-success">VALUE</div>
+              </h2>
+              <div className="flex justify-center items-center mr-12 mt-6">
+                <span className="text-lg text-gray-500 line-through mr-2">
+                  $15.95
+                </span>
+                <span className="text-4xl font-extrabold">$7.95</span>
+                <span className="text-xs text-gray-500 ml-2">USD</span>
+              </div>
+              <ul className="mt-4 space-y-2">
+              <li className="flex items-center text-gray-500">
+                  <span className="text-green-500 mr-2">✔️</span>
+                  Generate&nbsp;<span className="bg-[#D6EFE4] px-1 rounded">unlimited</span>&nbsp;roasts
+                </li>
+                <li className="flex items-center text-gray-500">
+                  <span className="text-green-500 mr-2">✔️</span>
+                  7 day money-back guarantee
+                </li>
+              </ul>
+              <div className="card-actions mt-6">
+                <a
+                  href="https://buy.stripe.com/9AQdRE8lQh2b33G5kw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary text-lg text-white w-full"
+                >
+                  Get Unlimited Roasts
+                </a>
+                <p className="text-sm text-center text-gray-500 mt-2">
+                🔒 Pay once. Use forever.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
