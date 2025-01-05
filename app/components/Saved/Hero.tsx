@@ -1,6 +1,6 @@
 "use client"
-import UploadDropzone from "./UploadDropZone";
-import ReviewBox from "./ReviewBox";
+import UploadDropzone from "../UploadDropZone";
+import ReviewBox from "../ReviewBox";
 
 export default function Hero() {
   return (
