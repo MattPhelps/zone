@@ -13,7 +13,22 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["cmyk"], // DaisyUI theme configuration
+    themes: [
+      {
+        theme: {
+          primary: "#0075C3",  // Customize primary color
+          secondary: "#2ecc71", // Customize secondary color
+          accent: "#9b59b6",   // Accent color
+          neutral: "#95a5a6",  // Neutral color
+          "base-100": "#ffffff", // Background color
+          info: "#1abc9c",     // Info color
+          success: "#00AA6E",  // Success color
+          warning: "#f39c12",  // Warning color
+          error: "#e74c3c",    // Error color
+        },
+      },
+      "fantasy", // Keep the default fantasy theme as a fallback
+    ],
   },
 };
 

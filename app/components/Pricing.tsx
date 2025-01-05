@@ -48,7 +48,7 @@ export default function Pricing() {
             <div className="card-body">
               <h2 className="card-title justify-center text-3xl lg:text:4xl font-bold">
                 Unlimited Roasts
-                <div className="badge text-white badge-success">VALUE</div>
+                <div className="badge text-white bg-[#00AA6E]">VALUE</div>
               </h2>
               <div className="flex justify-center items-center mr-12 mt-6">
                 <span className="text-lg text-gray-500 line-through mr-2">

@@ -77,8 +77,8 @@ export default function Navbar() {
           Body Fat Estimator
         </a>
 
-        {/* Desktop Menu */}
-        <ul className="menu menu-horizontal text-lg px-1 hidden lg:flex">
+        {/* Desktop Menu with Spacing */}
+        <ul className="menu menu-horizontal gap-4 text-lg px-1 hidden lg:flex ml-12">
           <li>
             <a href="/#examples" onClick={handleClickExamples}>
               Examples
@@ -97,7 +97,9 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* Navbar End 
+      {/* Navbar End */}
+      {/* Optional: Uncomment this for a Login button */}
+      {/**
       <div className="navbar-end pr-4 hidden lg:flex">
         <a className="btn text-lg ml-auto font-normal" href="/login">Login</a>
       </div>

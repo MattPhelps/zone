@@ -1,23 +1,28 @@
-"use client"
-import UploadDropzone from "./UploadDropZone";
+import ReviewBox from "./ReviewBox";
+
 
 export default function Hero() {
-  return (
-    <div className="hero min-h-screen -mt-40 flex items-center justify-center">
-      <div className="hero-content flex flex-col lg:flex-row items-center gap-24 lg:gap-24">
-        <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQFRw62xToSYnA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719481327000?e=1740009600&v=beta&t=Oa3j6Nt0vWEEgBNj70Qb_f_3Q1JKgXds5HktrVPLXac"
-          className="w-64 lg:w-80 rounded-lg shadow-xl"
-          alt="Box Office"
-        />
-        <div className="text-center lg:text-left max-w-md">
-          <h1 className="text-4xl font-bold">Body Fat Estimator</h1>
-          <p className="py-6">
-            Upload an image and find out your bodyfat.
-          </p>
-          <UploadDropzone />
+    return (
+      <div className="hero min-h-screen lg:-mt-28 flex items-center justify-center">
+        <div className="hero-content text-center">
+          <div className="max-w-2xl"> 
+          <h1 className="text-4xl lg:text-5xl font-bold">
+            Brutal Roasts, {" "}
+            <span className="underline decoration-3 underline-offset-8 decoration-primary">
+              Tailored
+            </span>{" "}
+            to Your Target
+          </h1>
+            <p className="py-6 text-lg mt-6">
+            Get personalized roasts in seconds with Roast Generator. Input your target's details, pick styles, and receive the perfect roast.
+            </p>
+            <a href="https://buy.stripe.com/9AQdRE8lQh2b33G5kw">
+              <button className="btn btn-primary btn-lg text-white mt-6">Start Roasting <span className="text-lg">→</span></button>
+            </a>
+            <ReviewBox />
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+  

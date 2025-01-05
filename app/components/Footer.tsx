@@ -24,7 +24,6 @@ export default function Footer() {
             <nav>
                 <h4 className="footer-title font-heading text-lg">From The Maker</h4>
                 <p><a className="link link-hover " href="https://roastgenerator.com/">Roast Generator</a></p>
-              <p><a className="link link-hover" href="https://comebackgenerator.com/">Comeback Generator</a></p>
             </nav>
         </footer>
     );
