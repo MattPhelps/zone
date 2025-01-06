@@ -21,41 +21,39 @@ export default function FAQ() {
                   What do I get exactly?
                 </div>
                 <div className="collapse-content">
-                <p className="text-lg">You’ll get personalized, brutally funny roasts tailored to the person or situation of your choice.</p>
-                <p className="text-lg">Whether it's a roast for your best friend, a themed roast for a party, or a savage comeback, the AI delivers custom-crafted roasts in seconds.</p>
+                <p className="text-lg">You’ll receive an instant report with your estimated body fat percentage, lean and fat mass breakdown, and fitness standard comparisons.</p>
                 </div>  
               </div>
               <div className="collapse collapse-plus bg-base-200 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg font-bold">
-                  How are the roasts personalized?
+                  How does it work?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                    Roast Generator uses the information you give it about the target to create a custom roast. This includes pictures, socials links, job title and hobbies - amongst other things. You only need to provide as much information as you want.
+                  Simply upload a clear photo of yourself, and our AI analyzes key body measurements to estimate your body fat percentage. You’ll receive a detailed report within seconds.
                   </p>
                 </div>
               </div>
               <div className="collapse collapse-plus bg-base-200 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg font-bold">
-                  Can AI actually be funny?
+                  Is it accurate?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                    Yes!
-                    The AI is trained on the most upvoted roasts from the <a href="https://www.reddit.com/r/RoastMe/" className="text-secondary">r/RoastMe</a> subreddit with 5.5 MILLION members. So it know what's funny and what's not.
+                  Our AI model is trained on a large dataset of body composition scans, making it highly accurate. While it’s not a replacement for medical-grade devices, it provides reliable estimates that align closely with professional methods like DEXA scans.
                   </p>
                 </div>
               </div>
               <div className="collapse collapse-plus bg-base-200 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg font-bold">
-                Are the roasts appropriate for all audiences?
+                What types of photos should I upload?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                    Definitely not! Some roasts can be quite brutal and are not suitable for children or sensitive people. You can adjust the intensity of the roast to make it more or less brutal.
+                  For best results, upload a well-lit, full-body photo in your underwear/swimwear to ensure the AI can analyze your body accurately.
                   </p>
                 </div>
               </div>
@@ -66,7 +64,18 @@ export default function FAQ() {
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                  Yes, you can get a 100% refund if you reach out to us within 7 days of your purchase.
+                  We’re confident in the accuracy of our tool, but if you feel the results are off, you can get a 100% refund if you reach out to us within 7 days of your purchase.
+                  </p>
+                </div>
+              </div>
+              <div className="collapse collapse-plus bg-base-200 rounded-lg">
+                <input type="radio" name="faq-accordion" />
+                <div className="collapse-title text-lg font-bold">
+                Is my data safe?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                  Yes! We prioritize your privacy. Your photos are processed securely and are never shared, stored, or used for any purpose beyond your analysis. All data is automatically deleted after processing.
                   </p>
                 </div>
               </div>
