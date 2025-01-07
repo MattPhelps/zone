@@ -8,7 +8,7 @@ export default function Hero() {
           <h1 className="text-4xl lg:text-5xl font-bold">
             Find Out Your  {" "}
             <span className="underline decoration-3 underline-offset-8 decoration-primary">
-              True
+              Actual
             </span>{" "}
             Body Fat % - Instantly
           </h1>

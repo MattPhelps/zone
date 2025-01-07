@@ -19,7 +19,7 @@ module.exports = {
           primary: "#0075C3",  // Customize primary color
           secondary: "#2ecc71", // Customize secondary color
           accent: "#9b59b6",   // Accent color
-          neutral: "#95a5a6",  // Neutral color
+          neutral: "#1F2937",  // Neutral color
           "base-100": "#ffffff", // Background color
           info: "#1abc9c",     // Info color
           success: "#00AA6E",  // Success color
