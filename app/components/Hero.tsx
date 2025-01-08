@@ -15,7 +15,7 @@ export default function Hero() {
             <p className="py-6 text-lg mt-6">
             Upload a photo and let our AI analyze your body composition in seconds. Fast, accurate, and hassle-free body fat estimate.
             </p>
-            <a href="https://buy.stripe.com/9AQdRE8lQh2b33G5kw">
+            <a href="https://buy.stripe.com/9AQ8ysdnWdvCaZ2aEG">
               <button className="btn btn-primary btn-lg text-white mt-6">Get My Body Fat % <span className="text-lg">→</span></button>
             </a>
             <ReviewBox />

@@ -8,18 +8,6 @@ export default function Navbar() {
     });
   };
 
-  const handleClickFAQs = () => {
-    trackEvent("Go To FAQs", {
-      location: "navbar",
-    });
-  };
-
-  const handleClickExamples = () => {
-    trackEvent("Go To Examples", {
-      location: "navbar",
-    });
-  };
-
   return (
     <div className="navbar bg-base-100">
       {/* Navbar Start */}
@@ -47,17 +35,12 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="/#examples" onClick={handleClickExamples}>
-                Examples
+              <a href="/upload">
+              Estimate Body Fat
               </a>
             </li>
             <li>
-              <a href="/#faq" onClick={handleClickFAQs}>
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="/#pricing" onClick={handleClickPricing}>
+              <a href="/#pricing">
                 Pricing
               </a>
             </li>
@@ -80,17 +63,12 @@ export default function Navbar() {
         {/* Desktop Menu with Spacing */}
         <ul className="menu menu-horizontal gap-4 text-lg px-1 hidden lg:flex ml-12">
           <li>
-            <a href="/#examples" onClick={handleClickExamples}>
-              Examples
+            <a href="/upload">
+              Estimate Body Fat
             </a>
           </li>
           <li>
-            <a href="/#faq" onClick={handleClickFAQs}>
-              FAQs
-            </a>
-          </li>
-          <li>
-            <a href="/#pricing" onClick={handleClickPricing}>
+            <a href="/#pricing">
               Pricing
             </a>
           </li>
