@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-base-100 text-base-content">
-      {/*  <AmplitudeInitializer /> */}
+      <AmplitudeInitializer />
         <Navbar />
         <main className="container mx-auto px-4 lg:px-8 py-8 min-h-screen">
           {children}
