@@ -19,9 +19,9 @@ export default function Home() {
   return (
    <>
       <Hero />
-       {/* <Examples /> 
-      <Comparison />
-      <SingleReview /> */}
+       {/* <Examples />  */}
+      <Comparison /> 
+      <SingleReview />
       <Pricing />
       <FAQ />
       <CTA />

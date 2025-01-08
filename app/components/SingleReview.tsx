@@ -39,10 +39,10 @@ export default function SingleReview() {
 
       {/* Review Quote */}
       <p className="text-center text-gray-700 text-lg mb-6">
-        AI can find and exploit weaknesses in a way that I can't haha.
+      This AI gave me instant, accurate results that helped me track my progress like never before.
       </p>
       <p className="text-center text-gray-700 text-lg mb-6">
-        If it's too brutal, I just turn down the intensity.
+      If you're serious about your fitness, this is a must-have tool.
       </p>
 
       {/* Profile Picture and Name */}
