@@ -1,6 +1,6 @@
 export default function PricingFAQ() {
     return (
-      <div id="faq" className="hero mt-10 flex items-center justify-center bg-base-100">
+      <div id="faq" className="hero mt-10 mb-20 flex items-center justify-center bg-base-100">
         <div className="hero-content w-full px-4">
           <div className="max-w-5xl mx-auto">
             {/* Heading */}
@@ -15,45 +15,28 @@ export default function PricingFAQ() {
   
             {/* FAQ Items */}
             <div className="space-y-4">
-              <div className="collapse collapse-plus bg-base-500 rounded-lg">
-                <input type="radio" name="faq-accordion"/>
-                <div className="collapse-title text-lg lg:text-xl">
-                  What do I get exactly?
-                </div>
-                <div className="collapse-content">
-                <p className="text-lg">You’ll receive an instant report with your estimated body fat percentage, lean and fat mass breakdown, and fitness standard comparisons.</p>
-                </div>  
-              </div>
+    
               <div className="collapse collapse-plus bg-base-500 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg lg:text-xl">
-                  How does it work?
+                  Should I buy one estimate or unlimited?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                  Simply upload a clear photo of yourself, and our AI analyzes key body measurements to estimate your body fat percentage. You’ll receive a detailed report within seconds.
+                  For one-off or hard-to-predict body fat estimate needs, buying 1 or 10 estimates is a great option.
+
+                  For larger or ongoing estimate needs, you'll save on every estimate that you process with an unlimited lifetime deal. With monthly plans starting at just 40 images per month and rollover of any unused credits (up to 5×) you'll benefit from huge savings without making a huge commitment.
                   </p>
                 </div>
               </div>
               <div className="collapse collapse-plus bg-base-500 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg lg:text-xl">
-                  Is it accurate?
+                What happens if I don't use all my esimates?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                  Our AI model is trained on a large dataset of body composition scans, making it highly accurate. While it’s not a replacement for medical-grade devices, it provides reliable estimates that align closely with professional methods like DEXA scans.
-                  </p>
-                </div>
-              </div>
-              <div className="collapse collapse-plus bg-base-500 rounded-lg">
-                <input type="radio" name="faq-accordion" />
-                <div className="collapse-title text-lg lg:text-xl">
-                What types of photos should I upload?
-                </div>
-                <div className="collapse-content">
-                  <p className="text-lg">
-                  For best results, upload a well-lit, full-body photo in your underwear/swimwear to ensure the AI can analyze your body accurately.
+                  Your leftover estimates will never expire. They can be used at any time in the future.
                   </p>
                 </div>
               </div>
@@ -71,24 +54,11 @@ export default function PricingFAQ() {
               <div className="collapse collapse-plus bg-base-500 rounded-lg">
                 <input type="radio" name="faq-accordion" />
                 <div className="collapse-title text-lg lg:text-xl">
-                Is my data safe?
+                What payment methods do you support?
                 </div>
                 <div className="collapse-content">
                   <p className="text-lg">
-                  Yes! We prioritize your privacy. Your photos are processed securely and are never shared, stored, or used for any purpose beyond your analysis. All data is automatically deleted after processing.
-                  </p>
-                </div>
-              </div>
-              <div className="collapse collapse-plus bg-base-500 rounded-lg">
-                <input type="radio" name="faq-accordion" />
-                <div className="collapse-title text-lg lg:text-xl">
-                  I have another question...
-                </div>
-                <div className="collapse-content">
-                  <p className="text-lg">
-                    No worries! Contact me via <a href="mailto:matt@leandme.com" className="text-secondary">
-              email.
-            </a>
+                  We support all major Credit Cards, PayPal and Apple Pay.
                   </p>
                 </div>
               </div>

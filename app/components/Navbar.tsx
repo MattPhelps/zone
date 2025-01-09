@@ -2,11 +2,6 @@
 import { trackEvent } from "../libs/amplitude";
 
 export default function Navbar() {
-  const handleClickPricing = () => {
-    trackEvent("Go To Pricing", {
-      location: "navbar",
-    });
-  };
 
   return (
     <div className="navbar bg-base-100">

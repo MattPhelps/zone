@@ -1,9 +1,8 @@
 export default function Pricing() {
   return (
-    <div id="pricing" className="hero min-h-screen flex items-center justify-center">
+    <div className="hero  flex items-center mb-20 justify-center">
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-3xl lg:text-5xl font-bold">Plans and Pricing</h1>
-        <div className="flex flex-col items-center gap-8 p-6 lg:flex-row lg:justify-center lg:gap-24 mt-12">
+        <div className="flex flex-col items-center gap-8 p-6 lg:flex-row lg:justify-center lg:gap-24 mt-2">
           {/* Card 1 */}
           <div className="card bg-base-100 w-full max-w-lg shadow-xl">
             <div className="card-body">
