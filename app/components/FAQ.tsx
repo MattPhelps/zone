@@ -31,7 +31,18 @@ export default function FAQ() {
               </div>
               <div className="collapse-content">
                 <p className="text-lg">
-                Simply upload a clear photo of yourself, and our AI analyzes key body measurements to estimate your body fat percentage. You’ll receive a detailed report within seconds.
+                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
+                </p>
+              </div>
+            </div>
+            <div className="collapse collapse-plus bg-base-500 rounded-lg">
+              <input type="radio" name="faq-accordion" />
+              <div className="collapse-title text-lg lg:text-xl">
+                How long does it take?
+              </div>
+              <div className="collapse-content">
+                <p className="text-lg">
+                  Most estimates are completed in less than 20 seconds.
                 </p>
               </div>
             </div>
@@ -53,7 +64,7 @@ export default function FAQ() {
               </div>
               <div className="collapse-content">
                 <p className="text-lg">
-                For best results, upload a well-lit, full-body photo in your underwear/swimwear to ensure the AI can analyze your body accurately.
+                For best results, upload a well-lit, full-body photo in your underwear/swimwear to ensure the AI can analyze your body accurately. Only one person in each photo.
                 </p>
               </div>
             </div>
