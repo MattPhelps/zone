@@ -22,7 +22,6 @@ export default function Home() {
        {/* <Examples />  */}
       <Comparison /> 
       <SingleReview />
-      <Pricing />
       <CTA />
    </>
   );
