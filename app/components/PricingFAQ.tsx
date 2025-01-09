@@ -8,10 +8,8 @@ export default function PricingFAQ() {
               Frequently Asked Questions
             </h2>
             <p className="py-6 text-lg mb-6 text-center">
-            Have another question? Contact me on <a href="https://x.com/skoyig" className="text-primary">Twitter</a> or by <a href="mailto:matt@leandme.com" className="text-primary">
-              email
-            </a>.
-            </p>
+          Have another question? Reach out to our support team by sending us an <a href="mailto:matt@leandme.com" className="text-primary">email</a> and we’ll get back to you as soon as we can.
+          </p>
   
             {/* FAQ Items */}
             <div className="space-y-4">
