@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import Pricing from "@/app/components/Pricing";
-import PricingFAQ from "@/app/components/PricingFAQ";
+import FAQ from "@/app/components/FAQ";
 
-const title = "Pricing";
+const title = "FAQ";
 const description = "";
 
 export const metadata: Metadata = {
@@ -10,13 +9,12 @@ export const metadata: Metadata = {
   description: description,
 };
 
-export default function PricingPage() {
+export default function FAQPage() {
   return (
    <>
    <div className="hero min-h-screen -mt-40 flex items-center justify-center">
    <div className="flex flex-col items-center mt-40 lg:mt-10 gap-6">
-      <Pricing />
-      <PricingFAQ />
+      <FAQ />
     </div>
     </div>
    </>

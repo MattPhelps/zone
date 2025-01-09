@@ -40,7 +40,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/#pricing">
+              <a href="/pricing">
                 Pricing
               </a>
             </li>
@@ -68,7 +68,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/#pricing">
+            <a href="/pricing">
               Pricing
             </a>
           </li>
