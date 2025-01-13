@@ -13,7 +13,7 @@ export default function SupportPage() {
    <>
   <div className=" flex items-center justify-center">
   <div className="flex flex-col items-center mt-10 gap-6">
-   <h2 className="text-4xl text-center lg:text-5xl font-bold">
+   <h2 className="text-xl lg:text-4xl text-center font-bold">
               Support
             </h2>
             <p className="py-6 text-lg mb-6 text-center">
