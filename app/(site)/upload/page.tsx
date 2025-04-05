@@ -74,7 +74,7 @@ function UploadPageContent() {
     <section className="hero flex flex-col items-center justify-start min-h-screen pt-0 lg:pt-0">
       <div className="hero-content flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-4xl mt-4 lg:mt-0">
         {/* Uploaded Image */}
-        <div className="sticky top-0 flex-shrink-0">
+        <div className="lg:sticky top-0 flex-shrink-0">
           <img
             src={imageUrl}
             alt="Uploaded image"
@@ -98,7 +98,7 @@ function UploadPageContent() {
         </div>
       </div>
       <div className="mt-10">
-      {loading ? "" : "Results don't seem accurate? Take a full-body photo in your underwear facing the camera head-on in a well-lit room."} 
+      {loading ? "" : "Results don't seem accurate? Take a full-body photo in your underwear facing the camera head-on in a well-lit room.  "} 
       </div>
       <a href="/upload">
       {loading ? "" : <button className="btn btn-primary btn-outline btn-lg text-white mt-6">Estimate Again<span className="text-lg">→</span></button>} 
