@@ -61,9 +61,9 @@ function UploadPageContent() {
     return (
       <div className="hero min-h-screen -mt-40 flex items-center justify-center">
         <div className="text-center lg:text-left max-w-md">
-          <p className="py-6">
-            Upload an image of yourself without a shirt on
-          </p>
+          <h1 className="text-center text-3xl lg:text-4xl font-bold mb-10">
+          Upload a shirtless image of yourself
+          </h1>
           <UploadDropzone />
         </div>
       </div>
@@ -85,7 +85,7 @@ function UploadPageContent() {
         {/* Estimate Display */}
         <div className="flex-1 overflow-y-auto max-h-screen px-4 lg:pl-8 scroll-smooth">
           <div className="text-center lg:text-left max-w-md">
-            <h2 className="text-2xl font-semibold mb-4">Estimated Body Fat:</h2>
+            <h2 className="text-2xl font-semibold mb-4">Estimated Body Fat %:</h2>
             <p className="text-4xl font-bold text-primary">
               {loading ? "Analyzing..." : estimate}
             </p>
@@ -121,3 +121,4 @@ export default function UploadPage() {
     </Suspense>
   );
 }
+// 

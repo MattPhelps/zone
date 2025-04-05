@@ -14,15 +14,6 @@ export default function FAQ() {
           {/* FAQ Items */}
           <div className="space-y-4">
             <div className="collapse collapse-plus bg-base-500 rounded-lg">
-              <input type="radio" name="faq-accordion"/>
-              <div className="collapse-title text-lg lg:text-xl">
-                What do I get exactly?
-              </div>
-              <div className="collapse-content">
-              <p className="text-lg">You’ll receive an instant report with your estimated body fat percentage, lean and fat mass breakdown, and fitness standard comparisons.</p>
-              </div>  
-            </div>
-            <div className="collapse collapse-plus bg-base-500 rounded-lg">
               <input type="radio" name="faq-accordion" />
               <div className="collapse-title text-lg lg:text-xl">
                 How does it work?
@@ -63,17 +54,6 @@ export default function FAQ() {
               <div className="collapse-content">
                 <p className="text-lg">
                 For best results, upload a well-lit, full-body photo in your underwear/swimwear to ensure the AI can analyze your body accurately. Only one person in each photo.
-                </p>
-              </div>
-            </div>
-            <div className="collapse collapse-plus bg-base-500 rounded-lg">
-              <input type="radio" name="faq-accordion" />
-              <div className="collapse-title text-lg lg:text-xl">
-                Can I get a refund if I'm not satisfied?
-              </div>
-              <div className="collapse-content">
-                <p className="text-lg">
-                We’re confident in the accuracy of our tool, but if you feel the results are off, you can get a 100% refund if you reach out to us within 7 days of your purchase.
                 </p>
               </div>
             </div>

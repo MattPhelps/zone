@@ -48,7 +48,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-semibold mb-4">5. Contact Us</h2>
           <p>
             If you have any questions or concerns about these Terms and Conditions, please contact us at{" "}
-            <a href="mailto:support@roast-generator.com" className="text-blue-500 hover:underline">support@roast-generator.com</a>.
+            <a href="mailto:support@roast-generator.com" className="text-blue-500 hover:underline">matt@leandme.com</a>.
           </p>
         </section>
       </div>
