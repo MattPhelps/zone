@@ -98,7 +98,7 @@ function UploadPageContent() {
         </div>
       </div>
       <div className="mt-10">
-      {loading ? "" : "Want more accurate results? Take a full-body photo in your underwear facing the camera head-on in a well-lit room."} 
+      {loading ? "" : "Results don't seem accurate? Take a full-body photo in your underwear facing the camera head-on in a well-lit room."} 
       </div>
       <a href="/upload">
       {loading ? "" : <button className="btn btn-primary btn-outline btn-lg text-white mt-6">Estimate Again<span className="text-lg">→</span></button>} 
