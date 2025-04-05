@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
 import UploadDropzone from "@/app/components/UploadDropZone";
+import { trackEvent } from "@/app/libs/amplitude";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
@@ -40,6 +41,10 @@ function UploadPageContent() {
           const estimateText = Array.isArray(data.estimate)
             ? data.estimate.join(" ").trim()
             : String(data.estimate).trim();
+
+            trackEvent("Estimate Bodyfat", {
+              estimate: estimateText,
+            });
 
           setEstimate(estimateText);
         } else {
