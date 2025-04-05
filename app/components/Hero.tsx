@@ -6,11 +6,7 @@ export default function Hero() {
         <div className="hero-content text-center">
           <div className="max-w-2xl"> 
           <h1 className="text-4xl lg:text-5xl font-bold">
-            Find Out Your  {" "}
-            <span className="underline decoration-3 underline-offset-8 decoration-primary">
-              Actual
-            </span>{" "}
-            Body Fat % - Instantly
+            Find Out Your Body Fat % - Instantly
           </h1>
             <p className="py-6 text-lg mt-6">
             Upload a photo and let our AI analyze your body composition in seconds. Fast, accurate, and hassle-free body fat estimate.

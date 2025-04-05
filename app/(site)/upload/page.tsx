@@ -1,85 +1,113 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
-import Rating from "@/app/components/Rating";
-import { Estimate } from "@/app/components/Estimate";
 import UploadDropzone from "@/app/components/UploadDropZone";
 
 function UploadPageContent() {
   const searchParams = useSearchParams();
   const imageUrl = searchParams.get("imageUrl");
 
+  const [estimate, setEstimate] = useState("...");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (imageUrl) {
+      fetchAndEstimate(imageUrl);
+    }
+  }, [imageUrl]);
+
+  const fetchAndEstimate = async (imageUrl: string) => {
+    setLoading(true);
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      const reader = new FileReader();
+
+      reader.onloadend = async () => {
+        const base64WithMime = reader.result as string;
+
+        const res = await fetch("/api/estimate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ imageBase64: base64WithMime }),
+        });
+
+        const data = await res.json();
+        console.log("Estimate API response:", data);
+
+        if (data.estimate) {
+          const estimateText = Array.isArray(data.estimate)
+            ? data.estimate.join(" ").trim()
+            : String(data.estimate).trim();
+
+          setEstimate(estimateText);
+        } else {
+          setEstimate("Error");
+        }
+
+        setLoading(false);
+      };
+
+      reader.readAsDataURL(blob);
+    } catch (err) {
+      console.error("Estimation error:", err);
+      setEstimate("Error");
+      setLoading(false);
+    }
+  };
+
   if (!imageUrl) {
     return (
       <div className="hero min-h-screen -mt-40 flex items-center justify-center">
-            
-              
-              <div className="text-center lg:text-left max-w-md">
-                <p className="py-6">
-                  Upload an image of yourself without a shirt on
-                </p>
-                <UploadDropzone />
-              </div>
-          </div>
+        <div className="text-center lg:text-left max-w-md">
+          <p className="py-6">
+            Upload an image of yourself without a shirt on
+          </p>
+          <UploadDropzone />
+        </div>
+      </div>
     );
   }
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = imageUrl; // URL of the rendered image
-    link.download = "roasted.png"; // File name for the downloaded image
-    link.click();
-  };
 
   return (
     <section className="hero flex flex-col items-center justify-start min-h-screen pt-0 lg:pt-0">
       <div className="hero-content flex flex-col lg:flex-row items-center gap-8 lg:gap-12 max-w-4xl mt-4 lg:mt-0">
-
-        {/* Rendered Image */}
+        {/* Uploaded Image */}
         <div className="sticky top-0 flex-shrink-0">
-        <img
-          src={imageUrl}
-          alt="Roasted mfer"
-          className="w-64 sm:w-80 lg:w-[22rem] rounded-lg shadow-xl"
-        />
+          <img
+            src={imageUrl}
+            alt="Uploaded image"
+            className="w-64 sm:w-80 lg:w-[22rem] rounded-lg shadow-xl"
+          />
         </div>
 
-        {/* BF Estimate Section */}
+        {/* Estimate Display */}
         <div className="flex-1 overflow-y-auto max-h-screen px-4 lg:pl-8 scroll-smooth">
-         <div className="text-center lg:text-left max-w-md">
-          <Estimate />
-         </div>
+          <div className="text-center lg:text-left max-w-md">
+            <h2 className="text-2xl font-semibold mb-4">Estimated Body Fat:</h2>
+            <p className="text-4xl font-bold text-primary">
+              {loading ? "Analyzing..." : estimate}
+            </p>
+            {estimate === "Error" && (
+              <p className="text-red-500 text-sm mt-2">
+                Something went wrong. Try another image.
+              </p>
+            )}
+          </div>
         </div>
       </div>
-
-     {/* Download Button */}
-        <button
-        className="btn btn-lg btn-primary text-white mt-8 lg:mt-24 transform transition-transform duration-200 hover:scale-105"
-        onClick={handleDownload}
-        >
-        Download Estimate
-        </button>
-
-
-      {/* Desktop-Only Rating in Bottom Right 
-      <div className="hidden lg:flex fixed rounded-lg items-center">
-        <Rating />
-      </div>
-      */}
     </section>
   );
 }
 
 export default function UploadPage() {
-    // Disable scrolling when the component is mounted
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, []);
-
 
   return (
     <Suspense
