@@ -85,8 +85,8 @@ function UploadPageContent() {
         {/* Estimate Display */}
         <div className="flex-1 overflow-y-auto max-h-screen px-4 lg:pl-8 scroll-smooth">
           <div className="text-center lg:text-left max-w-md">
-            <h2 className="text-2xl font-semibold mb-4">Estimated Body Fat %:</h2>
-            <p className="text-4xl font-bold text-primary">
+            <h2 className="text-2xl font-semibold mb-4">Estimated Body Fat:</h2>
+            <p className="text-4xl font-bold text-secondary">
               {loading ? "Analyzing..." : estimate}
             </p>
             {estimate === "Error" && (
@@ -97,6 +97,9 @@ function UploadPageContent() {
           </div>
         </div>
       </div>
+      <a href="/upload">
+      {loading ? "" : <button className="btn btn-primary btn-outline btn-lg text-white mt-6">Estimate Again<span className="text-lg">→</span></button>} 
+            </a>
     </section>
   );
 }

@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
         input: {
           top_p: 1,
           temperature: 0.3,
-          prompt: `Estimate this person's body fat percentage based only on the image. Take as much time as you need to be as accurate as you can. Look at all aspects of the person in the image's physique to help make a more accurate estimate. Respond with only the number followed by a percent sign. Do not include any explanation or extra text.`,
+          prompt: `Estimate this person's body fat percentage to the nearest integer based on the image. Take as much time as you need to be as accurate as you can. Look at all aspects of the person's physique to help make the most accurate estimate possible. Respond with only the number followed by a percent sign. Do not include any explanation or extra text.`,
 
           image: imageBase64,
         },
