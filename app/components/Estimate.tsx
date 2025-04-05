@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from "react";
 
-export function Roasts({ delay = 2000 }: { delay?: number }) { // Add `delay` prop
+export function Estimate({ delay = 2000 }: { delay?: number }) { // Add `delay` prop
   const [visibleMessages, setVisibleMessages] = useState<number>(0); // Tracks the number of visible messages
   const messages = [
     { id: 1, time: "12:45", text: "What kind of nonsense is this" },

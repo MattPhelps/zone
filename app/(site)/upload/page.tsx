@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
 import Rating from "@/app/components/Rating";
-import { Roasts } from "@/app/components/Roasts";
+import { Estimate } from "@/app/components/Estimate";
 import UploadDropzone from "@/app/components/UploadDropZone";
 
 function UploadPageContent() {
@@ -17,7 +17,7 @@ function UploadPageContent() {
               
               <div className="text-center lg:text-left max-w-md">
                 <p className="py-6">
-                  Upload an image of a person who needs roasting.
+                  Upload an image of yourself without a shirt on
                 </p>
                 <UploadDropzone />
               </div>
@@ -45,10 +45,10 @@ function UploadPageContent() {
         />
         </div>
 
-        {/* Text Section */}
+        {/* BF Estimate Section */}
         <div className="flex-1 overflow-y-auto max-h-screen px-4 lg:pl-8 scroll-smooth">
          <div className="text-center lg:text-left max-w-md">
-          <Roasts />
+          <Estimate />
          </div>
         </div>
       </div>
@@ -62,10 +62,11 @@ function UploadPageContent() {
         </button>
 
 
-      {/* Desktop-Only Rating in Bottom Right */}
+      {/* Desktop-Only Rating in Bottom Right 
       <div className="hidden lg:flex fixed rounded-lg items-center">
         <Rating />
       </div>
+      */}
     </section>
   );
 }

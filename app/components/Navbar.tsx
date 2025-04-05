@@ -34,11 +34,6 @@ export default function Navbar() {
               Estimate Body Fat
               </a>
             </li>
-            <li>
-              <a href="/pricing">
-                Pricing
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -60,11 +55,6 @@ export default function Navbar() {
           <li>
             <a href="/upload">
               Estimate Body Fat
-            </a>
-          </li>
-          <li>
-            <a href="/pricing">
-              Pricing
             </a>
           </li>
         </ul>

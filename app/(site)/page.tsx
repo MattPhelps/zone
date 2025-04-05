@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Hero from "../components/Hero";
-import Pricing from "../components/Pricing";
 import Examples from "../components/Examples";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
@@ -20,9 +19,6 @@ export default function Home() {
    <>
       <Hero />
        {/* <Examples />  */}
-      <Comparison /> 
-      <SingleReview />
-      <CTA />
    </>
   );
   
