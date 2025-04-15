@@ -20,6 +20,10 @@ export default function Footer() {
                 <p><a className="link link-hover text-white" href="/terms">Terms of use</a></p>
                 <p><a className="link link-hover text-white" href="/privacy">Privacy policy</a></p>
             </nav>
+            <nav>
+                <h4 className="footer-title font-heading text-lg text-white">Tools</h4>
+                <p><a className="link link-hover text-white" href="https://fatforecast.com/">Fat Forecast</a></p>
+            </nav>
         </footer>
     );
 }
