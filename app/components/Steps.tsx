@@ -1,6 +1,6 @@
 import ReviewBox from "./ReviewBox";
 
-export default function Hero() {
+export default function Steps() {
     return (
       <div className="hero min-h-screen text-white bg-background lg:-mt-28 flex items-center justify-center">
         <div className="hero-content text-center">
@@ -13,7 +13,7 @@ export default function Hero() {
             Upload a photo and let our AI analyze your body composition in seconds. Fast, accurate, and hassle-free body fat estimate.
             </p>
             <a href="/upload">
-              <button className="btn btn-primary btn-lg rounded-full text-white mt-6">Get the Formula <span className="text-lg">→</span></button>
+              <button className="btn btn-primary btn-lg rounded-full text-white mt-6">Get My Body Fat % <span className="text-lg">→</span></button>
             </a>
           </div>
         </div>

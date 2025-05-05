@@ -1,8 +1,8 @@
 export default function Comparison() {
     return (
-      <div className="hero min-h-screen mt-40 lg:mt-0 flex items-center justify-center">
+      <div className="hero min-h-screen mt-40 text-white lg:mt-0 flex items-center justify-center">
         <div className="w-full px-6 lg:px-12">
-          <h1 className="text-3xl lg:text-5xl font-bold text-center">Affordable Body Fat Tracking</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-center">Affordable <span className="text-[#FCA5A5]">Body Fat</span> Tracking fr <span className="text-[#87EFAC]">Fast Fuck</span></h1>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 mt-12">
             {/* Manual Roasting */}
             <div className="card bg-[#FFEAEC] w-full lg:w-1/3 shadow-xl">

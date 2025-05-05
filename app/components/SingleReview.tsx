@@ -1,6 +1,6 @@
 export default function SingleReview() {
     return (
-      <div className="lg:mt-0 flex mt-20 lg:mt-0 mb-20 lg:mb-0 items-center justify-center">
+      <div className="lg:mt-0 flex mt-20 lg:mt-0 mb-20 bg-background text-white lg:mb-0 items-center justify-center">
         <div className="w-full px-6 lg:px-12">
           <div className="flex flex-col items-center justify-center p-6 bg-white">
       {/* Stars */}
@@ -38,7 +38,7 @@ export default function SingleReview() {
       </div>
 
       {/* Review Quote */}
-      <p className="text-center text-gray-700 text-lg mb-6">
+      <p className="text-center text-white text-lg mb-6">
       This AI gave me instant, accurate results that helped me track my progress like never before.
       </p>
       <p className="text-center text-gray-700 text-lg mb-6">

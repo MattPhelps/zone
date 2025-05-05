@@ -5,9 +5,13 @@ import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 import Comparison from "../components/Comparison";
 import SingleReview from "../components/SingleReview";
+import Story from "../components/Story";
+import Modules from "../components/Modules";
+import Steps from "../components/Steps";
+import BeforeAfter from "../components/BeforeAfter";
 
-const title = "Body Fat Estimator – What % Body Fat Are You?";
-const description = "Discover your body fat percentage with our Body Fat Estimator. Get quick, accurate results to track your fitness progress and optimize your health goals.";
+const title = "Jawline Formula - The 17 Steps to your Best Jawline";
+const description = "";
 
 export const metadata: Metadata = {
   title: title,
@@ -18,7 +22,14 @@ export default function Home() {
   return (
    <>
       <Hero />
-       {/* <Examples />  */}
+      <BeforeAfter />
+      <Steps />
+      <Comparison />
+      <Modules />
+      <SingleReview />
+      <Story />
+      <FAQ />
+      <CTA />
    </>
   );
   
