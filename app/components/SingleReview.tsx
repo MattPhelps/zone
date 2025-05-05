@@ -45,7 +45,7 @@ export default function SingleReview() {
       If you're serious about your fitness, this is a must-have tool.
       </p>
 
-      {/* Profile Picture and Name */}
+      {/* Profile Picture and Nme */}
       <div className="flex flex-col items-center">
         <div className="avatar mb-2">
           <div className="w-16 rounded-full">
