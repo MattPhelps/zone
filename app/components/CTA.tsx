@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="hero-content text-center">
           <div className="max-w-2xl"> {/* Changed from max-w-md to max-w-lg */}
             <h2 className="text-3xl lg:text-5xl font-bold">Get the Formula</h2>
-            <p className="py-6 text-lg text-lightgray">
+            <p className="py-6 text-md lg:text-lg text-lightgray">
             Don't wait - take the first step towards your goal <i>now</i>
             </p>
             <a href="https://buy.stripe.com/9AQ8ysdnWdvCaZ2aEG">
