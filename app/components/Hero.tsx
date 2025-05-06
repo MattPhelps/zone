@@ -5,7 +5,7 @@ export default function Hero() {
     return (
       <div className="hero min-h-screen text-white bg-background lg:-mt-28 -mt-48 flex items-center justify-center">
         <div className="hero-content text-center">
-          <div className="max-w-2xl"> 
+          <div className="max-w-2xl "> 
           <ReviewBox />
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
             The Proven 17 Steps to Getting Your Best Possible Jawline
