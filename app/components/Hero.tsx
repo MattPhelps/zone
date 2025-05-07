@@ -27,7 +27,7 @@ export default function Hero() {
             onClick={handleClick}
             className="btn btn-primary btn-lg rounded-full text-white mt-6"
           >
-            CLICK HERE TO GET THE FORMULA <span className="text-lg">→</span>
+            GET THE FORMULA <span className="text-lg">→</span>
           </button>
         </div>
       </div>
