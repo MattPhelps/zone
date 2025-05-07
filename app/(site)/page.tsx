@@ -10,7 +10,7 @@ import BeforeAfter from "../components/BeforeAfter";
 import Testimonials from "../components/Testimonials";
 import TheOffer from "../components/TheOffer";
 
-const title = "Jawline Formula - The 17 Steps to your Best Jawline";
+const title = "Jawline Formula - The 17 Steps to Get Your Best Jawline";
 const description = "";
 
 export const metadata: Metadata = {
