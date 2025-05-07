@@ -22,9 +22,6 @@ export default function Hero() {
           <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
             The step-by-step jawline formula for men who want to improve their jawline naturally and become more attractive.
           </p>
-          <p className="py-6 text-2xl font-bold -mb-6 lg:text-3xl text-primary">
-            $17
-          </p>
 
           <button
             onClick={handleClick}
