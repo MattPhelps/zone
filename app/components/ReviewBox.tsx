@@ -19,7 +19,7 @@ export default function ReviewBox() {
       {/* Stars and Text */}
       <div className="flex flex-col items-center sm:items-start space-y-2">
         <p className="text-md text-lightgray">
-        Join 4,000+ men with better jawlines
+        Join 200+ men with better jawlines
         </p>
       </div>
     </div>

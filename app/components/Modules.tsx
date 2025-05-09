@@ -4,6 +4,13 @@ export default function Modules() {
     return (
       <div className="hero min-h-screen text-white bg-background lg:-mt-28 flex items-center justify-center">
         <div className="hero-content text-center">
+
+        <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
+            What You'll Learn With This Program
+          </h1>
+          <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
+            The step-by-step jawline formula for men who want to improve their jawline naturally and become more attractive.
+          </p>
          
         <div className="overflow-x-auto">
   <table className="table">

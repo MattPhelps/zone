@@ -5,25 +5,67 @@ export default function FAQ() {
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
           <h2 className="text-4xl lg:text-5xl text-center font-bold mb-10">
-            Have a Question?
+          Still Have Questions?
           </h2>
-           {/*
-          <p className="py-6 text-md lg:text-lg mb-6 text-center text-lightgray">
-          Have another question? Reach out to our support team by sending us an <a href="mailto:matt@leandme.com" className="text-primary">email</a> and we’ll get back to you as soon as we can.
-          </p>
-            */}
           {/* FAQ Items */}
           <div className="space-y-4">
             
           <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
-            <input type="radio" name="faq-accordion" />
+          <input type="radio" name="faq-accordion" />
             <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
               <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
-              How does it work?
+              What do I get exactly?
             </div>
             <div className="collapse-content">
               <p className="text-md lg:text-lg text-lightgray mt-6">
-                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
+                As soon as you purchase, you will get instant access to the following:
+                </p>
+                <ol className="text-md lg:text-lg text-lightgray mt-6">
+                  <li>• The 17 Step Jawline Formula Video Course (3hrs)</li>
+                  <li>• BONUS – 6 Mins a Day Personalised Jawline Workout Routine</li>
+                </ol>
+            </div>
+          </div>
+          </div>
+
+          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
+          <input type="radio" name="faq-accordion" />
+            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
+              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
+              Who is this course for?
+            </div>
+            <div className="collapse-content">
+              <p className="text-md lg:text-lg text-lightgray mt-6">          
+                This course is for any man who wants to improve his jawline naturally through exercises, posture and techniques. Whether you’re a beginner or someone tired of trying outdated exercises with no scientific evidence.
+              </p>
+            </div>
+          </div>
+
+          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
+          <input type="radio" name="faq-accordion" />
+            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
+              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
+              How long to see results?
+            </div>
+            <div className="collapse-content">
+              <p className="text-md lg:text-lg text-lightgray mt-6">
+                Some of the steps with give <i>instant</i> results, specifically the posture and grooming tips. Others may take a few weeks to see results. If you follow all 17 steps, you will reach your best jawline potential in 2-3 months.
+              </p>
+            </div>
+            </div>
+
+          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
+            <input type="radio" name="faq-accordion" />
+            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
+              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
+              Can I get a refund?
+            </div>
+            <div className="collapse-content">
+              <p className="text-md lg:text-lg text-lightgray mt-6">
+                You have the right to a full refund with no questions asked, <i>at any time</i>.
+              </p>
+              <p className="text-md lg:text-lg text-lightgray mt-6">
+                And it's super easy! When you buy, you get an email with the 17 Steps and all the bonuses. All you have to do is reply to the email with "refund" and I will process it immediately. You can always contact me at matt@lenandme.com if you have any questions.
               </p>
             </div>
           </div>
@@ -32,50 +74,11 @@ export default function FAQ() {
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
               <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
-              How does it work?
+              I have another question
             </div>
             <div className="collapse-content">
               <p className="text-md lg:text-lg text-lightgray mt-6">
-                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
-            <input type="radio" name="faq-accordion" />
-            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
-              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
-              How does it work?
-            </div>
-            <div className="collapse-content">
-              <p className="text-md lg:text-lg text-lightgray mt-6">
-                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
-            <input type="radio" name="faq-accordion" />
-            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
-              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
-              How does it work?
-            </div>
-            <div className="collapse-content">
-              <p className="text-md lg:text-lg text-lightgray mt-6">
-                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
-              </p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
-            <input type="radio" name="faq-accordion" />
-            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
-              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
-              How does it work?
-            </div>
-            <div className="collapse-content">
-              <p className="text-md lg:text-lg text-lightgray mt-6">
-                Simply upload a clear photo of yourself, and our advanced trained AI analyzes key body measurements and markers to estimate your body fat percentage.
+                No worries! Contact me via email at matt@leandme.com
               </p>
             </div>
           </div>
@@ -83,6 +86,5 @@ export default function FAQ() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

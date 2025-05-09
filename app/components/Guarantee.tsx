@@ -3,7 +3,7 @@
 import { trackEvent } from "../libs/amplitude";
 import siteConfig from "../libs/siteConfig";
 
-export default function TheOffer() {
+export default function Guarantee() {
    const handleClick = () => {
        trackEvent("Go to Checkout", {
                     location: "hero cta",

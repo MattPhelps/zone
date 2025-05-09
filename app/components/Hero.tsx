@@ -1,14 +1,14 @@
 'use client'
-
 import ReviewBox from "./ReviewBox";
 import { trackEvent } from "../libs/amplitude";
+import siteConfig from "../libs/siteConfig";
 
 export default function Hero() {
   const handleClick = () => {
      trackEvent("Go to Checkout", {
                   location: "hero cta",
                 });
-    window.location.href = "https://buy.stripe.com/28o8xOevc801a9W6oq"; // Redirect manually
+    window.location.href = siteConfig.checkoutLink;
   };
 
   return (
@@ -17,17 +17,17 @@ export default function Hero() {
         <div className="max-w-2xl">
           <ReviewBox />
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-            The <i>Proven</i> 17 Steps to Get Your Best Jawline
+            The Proven 17 Steps to Get Your Best Jawline
           </h1>
           <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
-            The step-by-step jawline formula for men who want to improve their jawline naturally and become more attractive.
+            The step-by-step jawline formula video course. For men who want to improve their jawline naturally and become more attractive.
           </p>
 
           <button
             onClick={handleClick}
             className="btn btn-primary btn-lg rounded-full text-white mt-6"
           >
-            GET THE FORMULA <span className="text-lg">→</span>
+            GET INSTANT ACCESS <span className="text-lg">→</span>
           </button>
         </div>
       </div>
