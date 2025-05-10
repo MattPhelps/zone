@@ -1,6 +1,6 @@
 export default function FAQ() {
   return (
-    <div id="faq" className="hero mb-20  flex text-white items-center justify-center bg-background">
+    <div id="faq" className="hero mt-20 mb-20  flex text-white items-center justify-center bg-background">
       <div className="hero-content w-full px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
@@ -23,6 +23,9 @@ export default function FAQ() {
                 <ol className="text-md lg:text-lg text-lightgray mt-6">
                   <li>• The 17 Step Jawline Formula Video Course (3hrs)</li>
                   <li>• BONUS – 6 Mins a Day Personalised Jawline Workout Routine</li>
+                  <li>• BONUS II – Lifetime Access to the Jawline Discord Community</li>
+                  <li>• BONUS III – Jawline Photo Guide</li>
+                  <li>• BONUS IV – Access to 4 Facial Analysis Softwares</li>
                 </ol>
             </div>
           </div>
@@ -50,6 +53,19 @@ export default function FAQ() {
             <div className="collapse-content">
               <p className="text-md lg:text-lg text-lightgray mt-6">
                 Some of the steps with give <i>instant</i> results, specifically the posture and grooming tips. Others may take a few weeks to see results. If you follow all 17 steps, you will reach your best jawline potential in 2-3 months.
+              </p>
+            </div>
+            </div>
+
+            <div className="collapse bg-base-500 rounded-lg border-t border-lightgray">
+          <input type="radio" name="faq-accordion" />
+            <div className="collapse-title flex items-center gap-4 text-xl lg:text-2xl">
+              <div className="text-3xl text-primary">+</div> {/* Manual Plus */}
+              What if I get stuck during the course?
+            </div>
+            <div className="collapse-content">
+              <p className="text-md lg:text-lg text-lightgray mt-6">
+              You’ll have access to a Discord support community where you can ask questions and get help from your instructor.
               </p>
             </div>
             </div>

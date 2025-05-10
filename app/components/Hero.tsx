@@ -20,8 +20,9 @@ export default function Hero() {
             The Proven 17 Steps to Get Your Best Jawline
           </h1>
           <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
-            The step-by-step jawline formula video course. For men who want to improve their jawline naturally and become more attractive.
+          The shortcut to your best jawline — no wasted time, just a clear, proven 17-step process that gets results faster
           </p>
+
 
           <button
             onClick={handleClick}

@@ -10,6 +10,7 @@ import BeforeAfter from "../components/BeforeAfter";
 import Testimonials from "../components/Testimonials";
 import TheOffer from "../components/TheOffer";
 import Guarantee from "../components/Guarantee";
+import Price from "../components/Price";
 
 const title = "Jawline Formula - The 17 Steps to Get Your Best Jawline";
 const description = "";
@@ -23,21 +24,23 @@ export default function Home() {
   return (
    <>
       <Hero />
-      <FAQ />
+      <Story />
       <Testimonials />
+      <Price />
+      <Guarantee />
+      <FAQ />
       <CTA /> 
          {/*
       <TheOffer />
       <Price />
      
         {/*
-      <Guarantee
      <Comparison />
       <BeforeAfter />
      
       
       <Modules />
-      <Story />
+      
       */}
    </>
   );
