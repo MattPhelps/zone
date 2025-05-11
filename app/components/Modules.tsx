@@ -2,175 +2,49 @@ import ReviewBox from "./ReviewBox";
 
 export default function Modules() {
     return (
-      <div className="hero min-h-screen text-white bg-background lg:-mt-28 flex items-center justify-center">
-        <div className="hero-content text-center">
-
-        <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-            What You'll Learn With This Program
-          </h1>
-          <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
-            The step-by-step jawline formula for men who want to improve their jawline naturally and become more attractive.
+      <div className="hero mt-20 mb-40 text-white flex flex-col items-left justify-center">
+      <div className="hero-content text-center flex flex-col items-left justify-center">
+        <div className="max-w-2xl w-full">
+          <h2 className="text-3xl lg:text-5xl font-bold">
+          The 17 Steps
+          </h2>
+          <p className="py-6 text-md lg:text-lg text-lightgray">
+          <span className="text-secondary">$102 off</span> for the next 11 customers
           </p>
-         
-        <div className="overflow-x-auto">
-  <table className="table">
-    {/* head */}
+
+          <div className="overflow-x-auto">
+  <table className="table py-6 text-md lg:text-lg">
+    {/* head 
     <thead>
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <th>Name</th>
+        <th></th>
+        <th >Name</th>
         <th>Job</th>
         <th>Favorite Color</th>
-        <th></th>
       </tr>
-    </thead>
+    </thead> */}
     <tbody>
       {/* row 1 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <td>
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="mask mask-squircle h-12 w-12">
-                <img
-                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
-                  alt="Avatar Tailwind CSS Component" />
-              </div>
-            </div>
-            <div>
-              <div className="font-bold">Hart Hagerty</div>
-              <div className="text-sm opacity-50">United States</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          Zemlak, Daniel and Leannon
-          <br />
-          <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-        </td>
-        <td>Purple</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
+        <th>1</th>
+        <td>Cy Ganderton</td>
       </tr>
       {/* row 2 */}
-      <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <td>
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="mask mask-squircle h-12 w-12">
-                <img
-                  src="https://img.daisyui.com/images/profile/demo/3@94.webp"
-                  alt="Avatar Tailwind CSS Component" />
-              </div>
-            </div>
-            <div>
-              <div className="font-bold">Brice Swyre</div>
-              <div className="text-sm opacity-50">China</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          Carroll Group
-          <br />
-          <span className="badge badge-ghost badge-sm">Tax Accountant</span>
-        </td>
-        <td>Red</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
+      <tr className="hover:bg-base-300">
+        <th>2</th>
+        <td>Hart HagertyHart Hagerty</td>
       </tr>
       {/* row 3 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <td>
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="mask mask-squircle h-12 w-12">
-                <img
-                  src="https://img.daisyui.com/images/profile/demo/4@94.webp"
-                  alt="Avatar Tailwind CSS Component" />
-              </div>
-            </div>
-            <div>
-              <div className="font-bold">Marjy Ferencz</div>
-              <div className="text-sm opacity-50">Russia</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          Rowe-Schoen
-          <br />
-          <span className="badge badge-ghost badge-sm">Office Assistant I</span>
-        </td>
-        <td>Crimson</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
-      </tr>
-      {/* row 4 */}
-      <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <td>
-          <div className="flex items-center gap-3">
-            <div className="avatar">
-              <div className="mask mask-squircle h-12 w-12">
-                <img
-                  src="https://img.daisyui.com/images/profile/demo/5@94.webp"
-                  alt="Avatar Tailwind CSS Component" />
-              </div>
-            </div>
-            <div>
-              <div className="font-bold">Yancy Tear</div>
-              <div className="text-sm opacity-50">Brazil</div>
-            </div>
-          </div>
-        </td>
-        <td>
-          Wyman-Ledner
-          <br />
-          <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
-        </td>
-        <td>Indigo</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
+        <th>3</th>
+        <td>Brice Swyre</td>
       </tr>
     </tbody>
-    {/* foot */}
-    <tfoot>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th></th>
-      </tr>
-    </tfoot>
   </table>
 </div>
 
+              
+          </div>
         </div>
       </div>
     );

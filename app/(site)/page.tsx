@@ -5,10 +5,8 @@ import CTA from "../components/CTA";
 import Comparison from "../components/Comparison";
 import SingleReview from "../components/SingleReview";
 import Story from "../components/Story";
-import Modules from "../components/Modules";
 import BeforeAfter from "../components/BeforeAfter";
 import Transformations from "../components/Transformations";
-import TheOffer from "../components/TheOffer";
 import Guarantee from "../components/Guarantee";
 import Price from "../components/Price";
 
@@ -33,7 +31,7 @@ export default function Home() {
 {/*
       <Comparison />
       <BeforeAfter />
-      <Modules />
+     
 */}
    </>
   );

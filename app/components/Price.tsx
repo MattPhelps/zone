@@ -18,9 +18,12 @@ export default function Price() {
             <h2 className="text-3xl lg:text-5xl font-bold">
             17 Proven Steps, Zero Wasted Time, Results You Can See
             </h2>
-            <p className="py-6 text-md lg:text-lg text-lightgray">
-            <span className="text-secondary">$102 off</span> for the next 11 customers
-            </p>
+            <div className="flex items-center justify-center mt-6 text-md lg:text-lg text-lightgray">
+            <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
+            <span>
+              <span className="text-secondary font-semibold">$102 off</span> with today's offer
+            </span>
+          </div>
   
             {/* SOLE CARD */}
             <div className="card bg-background w-full max-w-3xl mt-10 shadow-xl mx-auto border-2 border-primary shadow-[0_0_20px_rgba(31,88,208,0.5)] rounded-xl">
@@ -123,7 +126,7 @@ export default function Price() {
                 </button>
 
                 <p className="text-sm mt-4 text-center text-lightgray">
-                  🔒 Full refund at any time
+                  🔒 Full refund at anytime
                 </p>
               </div>
 
