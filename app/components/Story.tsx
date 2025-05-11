@@ -17,7 +17,7 @@ export default function Story() {
     <div id="cta" className="hero bg-white flex items-center justify-center">
         <div className="hero-content text-center">
           <div className="max-w-2xl"> {/* Changed from max-w-md to max-w-lg */}
-            <h2 className="text-3xl mt-20 lg:text-5xl font-bold">How to ACTUALLY Get a Jawline Without Wasting Time</h2>
+            <h2 className="mt-20 text-3xl lg:text-5xl font-bold">How to ACTUALLY Get a Jawline Without Wasting Time</h2>
             
             <img
               src="transformations/my-transformation.png" // Put the correct path to your image
@@ -76,11 +76,6 @@ export default function Story() {
             <li className="flex text-md mt-4 lg:text-lg items-center text-left gap-2 pl-12">
               <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mr-3" />
               Discover how to pose in photos like a model so you can get more attention on dating apps and on social media
-            </li>
-
-            <li className="flex text-md mt-4 lg:text-lg items-center text-left gap-2 pl-12">
-              <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mr-3" />
-              Take your dating and social life to another level
             </li>
 
             <p className="py-4 text-md mt-4 text-left lg:text-lg">

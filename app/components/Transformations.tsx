@@ -1,13 +1,13 @@
 import siteConfig from "../libs/siteConfig";
 
-export default function Testimonials() {
+export default function Transformations() {
 
   const buyerCount = siteConfig.buyerCount;
 
   return (
     <div className="hero min-h-screen text-white bg-background  flex items-center justify-center">
       <div className="hero-content flex flex-col text-center">
-        <h2 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
+        <h2 className="text-3xl lg:text-5xl mt-6 lg:mt-10 font-bold">
           {buyerCount} Transformations and Counting...
         </h2>
 

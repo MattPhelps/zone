@@ -7,7 +7,7 @@ import SingleReview from "../components/SingleReview";
 import Story from "../components/Story";
 import Modules from "../components/Modules";
 import BeforeAfter from "../components/BeforeAfter";
-import Testimonials from "../components/Testimonials";
+import Transformations from "../components/Transformations";
 import TheOffer from "../components/TheOffer";
 import Guarantee from "../components/Guarantee";
 import Price from "../components/Price";
@@ -25,23 +25,16 @@ export default function Home() {
    <>
       <Hero />
       <Story />
-      <Testimonials />
+      <Transformations />
       <Price />
       <Guarantee />
       <FAQ />
       <CTA /> 
-         {/*
-      <TheOffer />
-      <Price />
-     
-        {/*
-     <Comparison />
+{/*
+      <Comparison />
       <BeforeAfter />
-     
-      
       <Modules />
-      
-      */}
+*/}
    </>
   );
   

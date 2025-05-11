@@ -5,7 +5,7 @@ import siteConfig from "../libs/siteConfig";
 
 export default function Guarantee() {
   return (
-    <div className="text-black bg-white py-16 px-6 flex flex-col items-center justify-center">
+    <div className="text-white bg-background py-16 px-6 flex flex-col items-center justify-center">
       {/* HEADLINE */}
       <h1 className="text-3xl lg:text-5xl font-bold text-center mb-12">
       Unlock the Formula Today - 100% Risk Free
@@ -24,11 +24,11 @@ export default function Guarantee() {
 
         {/* TEXT */}
         <div >
-          <p className="py-4 text-md lg:text-lg text-left lg:text-left max-w-lg">
+          <p className="py-4 text-md lg:text-lg text-lightgray text-left lg:text-left max-w-lg">
           I so strongly believe that the 17 Steps will revolutionize your looks, and your health - just like it has countless other men around the world - that I'm willing to give you a 100% no questions asked money-back guarantee.
           </p>
-          <p className="py-4 text-md lg:text-lg text-lwft lg:text-left max-w-lg">
-          But let me say one thing, I guarantee you that the 17 Step video series will take your quality of life to a level it has never been before. I guarantee you that it will shave years off life's painful learning curve and help you reach your goals 3-4x faster than normal. I guarantee you that this program will be full of things that you have never heard of before.
+          <p className="py-4 text-md lg:text-lg text-lightgray text-lwft lg:text-left max-w-lg">
+          I guarantee you that the 17 Step video series will take your quality of life to a level it has never been before and help you reach your goals 3-4x faster than normal.
           </p>
         </div>
       </div>

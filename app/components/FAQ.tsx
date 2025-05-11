@@ -4,7 +4,7 @@ export default function FAQ() {
       <div className="hero-content w-full px-4">
         <div className="max-w-5xl mx-auto">
           {/* Heading */}
-          <h2 className="text-4xl lg:text-5xl text-center font-bold mb-10">
+          <h2 className="text-3xl lg:text-5xl text-center font-bold mb-10">
           Still Have Questions?
           </h2>
           {/* FAQ Items */}
@@ -81,7 +81,10 @@ export default function FAQ() {
                 You have the right to a full refund with no questions asked, <i>at any time</i>.
               </p>
               <p className="text-md lg:text-lg text-lightgray mt-6">
-                And it's super easy! When you buy, you get an email with the 17 Steps and all the bonuses. All you have to do is reply to the email with "refund" and I will process it immediately. You can always contact me at matt@lenandme.com if you have any questions.
+                And it's super easy! When you buy, you get an email with the 17 Steps and all the bonuses. All you have to do is reply to the email with "refund" and I will process it immediately. Whether it's 29 minutes or 29 days from now, you are always able to get your money back.
+              </p>
+              <p className="text-md lg:text-lg text-lightgray mt-6">
+                Don't hesitate to contact me if you have any questions - <i>matt@leandme.com</i>
               </p>
             </div>
           </div>
@@ -94,7 +97,7 @@ export default function FAQ() {
             </div>
             <div className="collapse-content">
               <p className="text-md lg:text-lg text-lightgray mt-6">
-                No worries! Contact me via email at matt@leandme.com
+                No worries! Contact me via email - <i>matt@leandme.com</i>
               </p>
             </div>
           </div>

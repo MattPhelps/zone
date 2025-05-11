@@ -12,10 +12,10 @@ export default function TheOffer() {
     };
 
     return (
-       <div className="hero text-white bg-white flex items-center justify-center">
+       <div className="hero text-white bg-background flex items-center justify-center">
             <div className="hero-content text-center">
               <div className="max-w-2xl">
-                <h1 className="text-3xl text-black mt-12 lg:mt-24 lg:text-5xl font-bold">
+                <h1 className="text-3xl lg:text-5xl mt-12 lg:mt-24 font-bold">
                   You Get Instant Access to the Following
                 </h1>
                 <p className="py-6 text-md lg:text-lg text-lblack -mb-6 -mt-0 lg:mt-6">
