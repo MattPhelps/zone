@@ -14,17 +14,17 @@ export default function Story() {
 
   return (
     <>
-    <div id="cta" className="hero bg-white flex items-center justify-center">
+    <div id="cta" className="hero bg-background flex items-center justify-center">
         <div className="hero-content text-center">
           <div className="max-w-2xl"> {/* Changed from max-w-md to max-w-lg */}
-            <h2 className="mt-20 text-3xl lg:text-5xl font-bold">How to ACTUALLY Get a Jawline Without Wasting Time</h2>
+            <h2 className="mt-20 text-white text-3xl lg:text-5xl font-bold">How to ACTUALLY Get a Jawline Without Wasting Time</h2>
             
             <img
               src="transformations/my-transformation.png" // Put the correct path to your image
               alt="Before and after jawline"
               className="my-10 mx-auto rounded-xl shadow-xl w-full max-w-md"
             />
-
+           <div className="text-lightgray">
             <p className="py-4 text-md mt-6 text-left lg:text-lg">
             The secret to getting a chiseled jawline is simple:
             </p>
@@ -89,6 +89,7 @@ export default function Story() {
             <p className="py-4 text-md mb-12 text-left lg:text-lg">
             Just look at what some students have done:
             </p>
+            </div>
 
           {/* 
             <button
