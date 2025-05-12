@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex items-center justify-center mt-6 text-sm text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
             <span>
-              <span className="text-secondary font-semibold">$102 off</span> with today's offer
+              <span className="text-secondary font-semibold">$50 off</span> with today's offer
             </span>
           </div>
 
