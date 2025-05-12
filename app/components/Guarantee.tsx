@@ -17,7 +17,7 @@ export default function Guarantee() {
         <div className="flex-shrink-0">
           <img
             src="icons/guarantee.png"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-[16rem] rounded-lg shadow-2xl"
             alt="Guarantee"
           />
         </div>
