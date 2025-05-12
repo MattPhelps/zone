@@ -33,7 +33,7 @@ export default function Price() {
              </h2> */}
 
                 <div className="flex justify-center items-left mt-6">
-                <span className="text-lg text-gray-500 line-through mr-2">$149</span>
+                <span className="text-lg text-gray-500 line-through mr-2">$97</span>
                   <span className="text-5xl font-extrabold text-white">$47</span>
                   <span className="text-xs text-gray-500 ml-2">USD</span>
                 </div>
