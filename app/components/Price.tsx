@@ -100,13 +100,13 @@ export default function Price() {
                         <p className="text-xl font-semibold">
                           BONUS IV – Male Model Photo Checklist
                         </p>
-                        <p className="text-lightgray mb-6 mt-1">How anyone can use simple poses and angles to instantly look more attractive in photos - for dating or socials <span className="italic">($47 value)</span></p>
+                        <p className="text-lightgray mb-6 mt-1">How anyone can use simple poses and angles to instantly look more attractive in photos - for dating or socials <span className="italic">($55 value)</span></p>
                       </div>
                     </div>
                   </div>
 
                   <p className="text-center text-xl">
-                    Total Value: <span className="text-red-500 text-xl font-bold">&nbsp;$437</span>
+                    Total Value: <span className="text-red-500 text-xl font-bold">&nbsp;$445</span>
                   </p>
 
                   <p className="text-center text-2xl text-white">
