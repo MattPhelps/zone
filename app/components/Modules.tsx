@@ -9,7 +9,7 @@ export default function Modules() {
           The 17 Steps
           </h2>
           <p className="py-6 text-md lg:text-lg text-lightgray">
-          <span className="text-secondary">$102 off</span> for the next 11 customers
+          <span className="text-secondary">$102 of</span> for the next 11 customers
           </p>
 
           <div className="overflow-x-auto">
