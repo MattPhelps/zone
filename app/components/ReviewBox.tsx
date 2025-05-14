@@ -1,5 +1,10 @@
+import siteConfig from "../libs/siteConfig";
+
 export default function ReviewBox() {
+  const buyerCount = siteConfig.buyerCount;
+
   return (
+  
     <div className="flex flex-col items-center justify-center mt-12 space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
       {/* Avatar Group */}
       <div className="flex -space-x-2">
@@ -19,7 +24,7 @@ export default function ReviewBox() {
       {/* Stars and Text */}
       <div className="flex flex-col items-center sm:items-start space-y-2">
         <p className="text-md text-lightgray">
-        Join 200+ men with better jawlines
+        <i>{buyerCount} men love the formula</i>
         </p>
       </div>
     </div>
