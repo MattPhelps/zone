@@ -17,10 +17,10 @@ export default function Hero() {
         <div className="max-w-2xl">
           <ReviewBox />
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-            The Proven 17 Steps to Get Your Best Jawline
+            Get a Jawline Naturally, in Weeks
           </h1>
           <p className="py-6 text-md lg:text-lg text-lightgray -mb-6 -mt-0 lg:mt-6">
-          The shortcut to your best jawline — no wasted time, just a clear, proven 17-step process that gets results faster
+          The shortcut to your best jawline — no wasted time, just a clear, proven 17-step process that gets results fast
           </p>
 
 
