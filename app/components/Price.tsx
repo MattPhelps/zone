@@ -16,7 +16,7 @@ export default function Price() {
         <div className="hero-content text-center flex flex-col items-left justify-center">
           <div className="max-w-2xl w-full">
             <h2 className="text-3xl lg:text-5xl font-bold">
-            17 Proven Steps, Zero Wasted Time, Results You Can See
+            17 Proven Steps, Zero Wasted Time, Results You Can See!
             </h2>
             <div className="flex items-center justify-center mt-6 text-md lg:text-lg text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
@@ -59,7 +59,7 @@ export default function Price() {
                       <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mt-1" />
                       <div>
                         <p className="text-xl font-semibold">
-                          BONUS I – 10 Minute Personalized Jawline Sculpting Routine
+                          BONUS I – 10min/day Personalized Jawline Sculpting Routine
                         </p>
                         <p className="text-lightgray mt-1">Adjusted to your starting point and needs so you never go too fast, pleateau or risk injury <span className="italic">($79 value)</span></p>
                       </div>
@@ -72,9 +72,9 @@ export default function Price() {
                       <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mt-1" />
                       <div>
                         <p className="text-xl font-semibold">
-                          BONUS II – Private Discord Community
+                          BONUS II – Dedicated Jawline Discord Community
                         </p>
-                        <p className="text-lightgray mt-1">Join other men on the same path. Get accountability, feedback, and 24/7 support from your instructor <span className="italic">($49 value)</span></p>
+                        <p className="text-lightgray mt-1">Join other men on the same path. Get accountability, feedback, and 24/7 support from your instructor Matt Phelps<span className="italic">($49 value)</span></p>
                       </div>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function Price() {
                   </p>
 
                   <p className="text-center text-2xl text-white">
-                  Today's Offer: <span className="text-secondary text-3xl font-bold ">&nbsp;$47</span>
+                  <span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;$47</span>
                 </p>
 
 

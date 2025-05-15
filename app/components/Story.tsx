@@ -26,29 +26,23 @@ export default function Story() {
             />
            <div className="text-lightgray">
             <p className="py-4 text-md mt-6 text-left lg:text-lg">
-            The secret to getting a chiseled jawline is simple:
-            </p>
-
-            <ol className="py-6 text-md text-left lg:text-lg pl-12 list-decimal">
-              <li>Identify the steps that get results</li>
-              <li>Focus all your energy on those steps</li>
-              <li>Ignore everything else</li>
-            </ol>
-
-            <p className="py-4 text-md text-left lg:text-lg">
-            The best way to do that is to spend years of trial and error figuring out what works and what doesn’t.
+            <i>Hey it's Matt, your teacher 👋</i>
             </p>
 
             <p className="py-4 text-md text-left lg:text-lg">
-            But luckily, you don’t have to because <i>I’ve already done it for you.</i>
+            I tried to get a jawline for 12 years.
             </p>
 
             <p className="py-4 text-md text-left lg:text-lg">
-            My 17 Step Jawline Formula is a complete guide on how to ignore time-wasting exercises and only do stuff that moves the needle for jawline improvement.
+            The way teachers taught was boring and impractical, so I didn’t care.
             </p>
 
             <p className="py-4 text-md text-left lg:text-lg">
-            Not only that. Once you apply the formula to your own jaw, many of the steps will become second nature and you won't have to remember to do them.
+            In 2016, I faced the same issue trying to learn coding. Courses were too long and made for people who want to get a job. I almost gave up... 😔
+            </p>
+
+            <p className="py-4 text-md text-left lg:text-lg">
+            So I skipped the theory, built tiny apps, and made my first $1,000 online with a few lines of code.
             </p>
 
             <p className="py-4 text-md text-left lg:text-lg">
