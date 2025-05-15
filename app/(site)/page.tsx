@@ -23,7 +23,9 @@ export default function Home() {
    <>
       <Hero />
       <Story />
+      {/*
       <Transformations />
+      */}
       <Price />
       <Guarantee />
       <FAQ />

@@ -22,11 +22,12 @@ export default function ReviewBox() {
       </div>
 
       {/* Stars and Text */}
-      <div className="flex flex-col items-center sm:items-start space-y-2">
-        <p className="text-md text-lightgray">
-        <i>{buyerCount} men love the formula</i>
-        </p>
-      </div>
+      <div className="flex flex-row items-center gap-2 sm:flex-col sm:items-start sm:gap-0">
+  <div className="text-sm">⭐⭐⭐⭐⭐</div>
+  <p className="text-sm text-lightgray">
+    <i>{buyerCount} men love the formula</i>
+  </p>
+</div>
     </div>
   );
 }
