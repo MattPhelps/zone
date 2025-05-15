@@ -87,7 +87,7 @@ export default function Price() {
                         <p className="text-xl font-semibold">
                           BONUS III – Facial Aesthetics Kickstart Scan
                         </p>
-                        <p className="text-lightgray mt-1">Discover what’s hurting your attractiveness so you know exactly what to fix first — based on key metrics like jawline angle, symmetry, and midface ratio  <span className="italic">($65 value)</span></p>
+                        <p className="text-lightgray mt-1">Discover what’s hurting your attractiveness so you know exactly what to fix first — based on key metrics like jawline angle, symmetry check, craniovertebral angle and midface ratio  <span className="italic">($65 value)</span></p>
                       </div>
                     </div>
                   </div>
