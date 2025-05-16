@@ -27,7 +27,7 @@ export default function Story() {
             />
            <div className="text-lightgray">
             <p className="py-4 text-md mt-6 text-left lg:text-lg">
-            Not because they don’t have the potential —
+            Not because they don’t <i>have</i> the potential —
             </p>
 
             <p className="py-4 text-md text-left lg:text-lg">

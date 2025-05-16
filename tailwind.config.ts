@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         background: "#0E0F12", // Tailwind color directly usable
-        lightgray: "#B7B7B8",  // Example of your added color
+        lightgray: "#DADADA",  // Example of your added color
         lightBackground: "#212121", // optional if you use it
       },
     },
