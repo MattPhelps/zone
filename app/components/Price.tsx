@@ -21,7 +21,7 @@ export default function Price() {
             <div className="flex items-center justify-center mt-6 text-md lg:text-lg text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
             <span>
-              <span className="text-secondary font-semibold">$50 off</span> with today's offer
+              <span className="text-secondary font-semibold">$52 off</span> with today's offer
             </span>
           </div>
   
@@ -33,8 +33,8 @@ export default function Price() {
              </h2> */}
 
                 <div className="flex justify-center items-left mt-6">
-                <span className="text-lg text-gray-500 line-through mr-2">$97</span>
-                  <span className="text-5xl font-extrabold text-white">$47</span>
+                <span className="text-lg text-gray-500 line-through mr-2">$149</span>
+                  <span className="text-5xl font-extrabold text-white">$97</span>
                   <span className="text-xs text-gray-500 ml-2">USD</span>
                 </div>
 
@@ -72,9 +72,9 @@ export default function Price() {
                       <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mt-1" />
                       <div>
                         <p className="text-xl font-semibold">
-                          BONUS II – Dedicated Jawline Discord Community
+                        Discord Community & Coaching <span className="text-lightgray">(Limited Time)</span>
                         </p>
-                        <p className="text-lightgray mt-1">Join other men on the same path. Get accountability, feedback, and 24/7 support from your instructor Matt Phelps<span className="italic">($49 value)</span></p>
+                        <p className="text-lightgray mt-1">Join other men on the same path. Get help, feedback, and 1:1 coaching from your instructor Matt Phelps <span className="italic">($49 value)</span></p>
                       </div>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function Price() {
                   </p>
 
                   <p className="text-center text-2xl text-white">
-                  <span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;$47</span>
+                  <span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;$97</span>
                 </p>
 
 

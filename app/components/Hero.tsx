@@ -16,12 +16,12 @@ export default function Hero() {
     <div className="hero min-h-screen text-white bg-background lg:-mt-28 -mt-48 flex items-center justify-center">
       <div className="hero-content text-center">
         <div className="max-w-2xl">
-          <ReviewBox />
+        <ReviewBox />
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-          Get a Sharper Jawline in Weeks, Not Months
+            Transform Your Jawline in Weeks, Not Months
           </h1>
           <p className="py-6 text-lg lg:text-lg text-lightgray -mb-2 -mt-0 lg:mt-6">
-          The shortcut to your best jawline — no wasted time, just a clear, proven 17-step process that gets results fast
+          Everything you need to get your sharpest jawline — and catch eyes everywhere you go
           </p>
 
           {/* 
