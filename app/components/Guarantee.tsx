@@ -4,6 +4,7 @@ import { trackEvent } from "../libs/amplitude";
 import siteConfig from "../libs/siteConfig";
 
 export default function Guarantee() {
+
   return (
     <div className="text-white bg-background py-16 px-6 flex flex-col items-center justify-center">
       {/* HEADLINE */}
@@ -25,7 +26,7 @@ export default function Guarantee() {
         {/* TEXT */}
         <div >
           <p className="py-4 text-md lg:text-lg text-lightgray text-left lg:text-left max-w-lg">
-          I so strongly believe that the Jawline Formula will revolutionize your looks, and your health - just like it has countless other men around the world - that I give you a 100% no questions asked money-back guarantee.
+          I so strongly believe that the Jawline Formula will revolutionize your looks - just like it has for {siteConfig.buyerCount} other men around the world - that I give you a 100% no questions asked money-back guarantee.
           </p>
           <p className="py-4 text-md lg:text-lg text-lightgray text-lwft lg:text-left max-w-lg">
           I guarantee you that the Jawline Formula will help you reach your goals 3-4x faster than normal.

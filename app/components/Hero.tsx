@@ -44,7 +44,8 @@ export default function Hero() {
   */} 
 
   return (
-    <div className="hero min-h-screen text-white bg-background lg:-mt-28 -mt-48 flex items-center justify-center">
+    <div className="hero min-h-screen text-white bg-background lg:-mt-28 -mt-40 flex items-center justify-center">
+      
       <div className="hero-content text-center">
         <div className="max-w-2xl">
         <ReviewBox />
