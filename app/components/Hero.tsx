@@ -10,6 +10,15 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 
 export default function Hero() {
 
+  const handleClick = () => {
+    trackEvent("Go to Checkout", {
+                 location: "hero cta",
+               });
+   window.location.href = siteConfig.checkoutLink;
+ };
+
+  {/* 
+
   const handleClick = async () => {
     trackEvent('Go to Checkout', { location: 'hero cta' });
 
@@ -31,6 +40,8 @@ export default function Hero() {
       stripe.redirectToCheckout({ sessionId: data.sessionId });
     }
   };
+
+  */} 
 
   return (
     <div className="hero min-h-screen text-white bg-background lg:-mt-28 -mt-48 flex items-center justify-center">
