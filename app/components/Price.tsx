@@ -16,7 +16,7 @@ export default function Price() {
         <div className="hero-content text-center flex flex-col items-left justify-center">
           <div className="max-w-2xl w-full">
             <h2 className="text-3xl lg:text-5xl font-bold">
-            Everything You Need for a Sharper Jawline — In Just Minutes a Day
+            Transform Your Jawline Fast With a Proven Formula
             </h2>
             <div className="flex items-center justify-center mt-6 text-md lg:text-lg text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
