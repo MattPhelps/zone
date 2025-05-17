@@ -3,13 +3,33 @@ import ReviewBox from "./ReviewBox";
 import { trackEvent } from "../libs/amplitude";
 import siteConfig from "../libs/siteConfig";
 import VideoPlayer from "./VideoPlayer";
+import { loadStripe } from '@stripe/stripe-js';
+import { useState } from 'react';
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 export default function Hero() {
-  const handleClick = () => {
-     trackEvent("Go to Checkout", {
-                  location: "hero cta",
-                });
-    window.location.href = siteConfig.checkoutLink;
+
+  const handleClick = async () => {
+    trackEvent('Go to Checkout', { location: 'hero cta' });
+
+    const res = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ priceId: siteConfig.stripePriceId }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error('Checkout failed:', data);
+      return;
+    }
+
+    const stripe = await stripePromise;
+    if (stripe) {
+      stripe.redirectToCheckout({ sessionId: data.sessionId });
+    }
   };
 
   return (

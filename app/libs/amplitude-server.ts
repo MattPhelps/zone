@@ -1,6 +1,6 @@
 // lib/amplitude-server.ts
 const AMPLITUDE_API_URL = 'https://api2.amplitude.com/2/httpapi';
-const API_KEY = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
+const API_KEY = process.env.AMPLITUDE_API_KEY;
 
 // Type for user properties
 interface AmplitudeEvent {
