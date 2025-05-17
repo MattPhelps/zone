@@ -32,6 +32,9 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ sessionId: session.id });
   } catch (err) {
     console.error('Error in /api/checkout:', err);
-    return new NextResponse('Internal Server Error', { status: 500 });
+    return NextResponse.json(
+      { error: 'Internal Server Error', details: (err as Error).message },
+      { status: 500 }
+    );
   }
 }
