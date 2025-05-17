@@ -1,4 +1,3 @@
-// app/api/checkout/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
@@ -8,33 +7,21 @@ export async function POST(req: NextRequest) {
   try {
     const { priceId } = await req.json();
 
-    if (!priceId) {
-      return NextResponse.json(
-        { error: 'Missing priceId' },
-        { status: 400 }
-      );
-    }
+    console.log('🧪 Incoming priceId:', priceId);
+    console.log('🔐 Using STRIPE_SECRET_KEY:', !!process.env.STRIPE_SECRET_KEY);
+    console.log('🌐 Using NEXT_PUBLIC_BASE_URL:', process.env.NEXT_PUBLIC_BASE_URL);
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       payment_method_types: ['card'],
       line_items: [{ price: priceId, quantity: 1 }],
-      discounts: [
-        {
-          promotion_code: 'promo_1RPr0wIgygwzwsyekwWXK6sf',
-           // promo_1RPrDZIgygwzwsyeeVpTPmGW 
-        },
-      ],
       success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/success`,
       cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/cancel`,
     });
 
     return NextResponse.json({ sessionId: session.id });
-  } catch (err) {
-    console.error('Error in /api/checkout:', err);
-    return NextResponse.json(
-      { error: 'Internal Server Error', details: (err as Error).message },
-      { status: 500 }
-    );
+  } catch (err: any) {
+    console.error('❌ Error in /api/checkout:', err);
+    return new NextResponse('Internal Server Error', { status: 500 });
   }
 }
