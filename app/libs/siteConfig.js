@@ -9,7 +9,11 @@ const siteConfig = {
     oldPrice: "$97",
     discountedPrice: "$47",
     totalDicount: "$50",
-    stripePriceId: "price_1RNgceIgygwzwsyeqvc20c48"
+    stripePriceId: "price_1RNgceIgygwzwsyeqvc20c48",
+    mainProductUrl: "",
+    discordUrl: "",
+    checklistUrl: "",
+    routineUrl: "",
   };
   
   export default siteConfig;
