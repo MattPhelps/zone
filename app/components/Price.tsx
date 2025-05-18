@@ -21,7 +21,7 @@ export default function Price() {
             <div className="flex items-center justify-center mt-6 text-md lg:text-lg text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
             <span>
-              <span className="text-secondary font-semibold">$52 off</span> with today's offer
+              <span className="text-secondary font-semibold">{siteConfig.totalDicount} off</span> with today's offer
             </span>
           </div>
   
@@ -33,8 +33,8 @@ export default function Price() {
              </h2> */}
 
                 <div className="flex justify-center items-left mt-6">
-                <span className="text-lg text-gray-500 line-through mr-2">$149</span>
-                  <span className="text-5xl font-extrabold text-white">$97</span>
+                <span className="text-lg text-gray-500 line-through mr-2">{siteConfig.oldPrice}</span>
+                  <span className="text-5xl font-extrabold text-white">{siteConfig.discountedPrice}</span>
                   <span className="text-xs text-gray-500 ml-2">USD</span>
                 </div>
 
@@ -111,7 +111,7 @@ export default function Price() {
                   </p>
 
                   <p className="text-center text-2xl text-white">
-                  <span className="text-xl">*</span><span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;$97</span>
+                  <span className="text-xl">*</span><span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;{siteConfig.discountedPrice}</span>
                 </p>
                 <p className="text-sm  text-center text-lightgray italic mt-2">
                 *offer is limited and can end at any time
