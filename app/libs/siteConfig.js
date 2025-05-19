@@ -11,7 +11,6 @@ const siteConfig = {
     totalDicount: "$30",
     stripePriceId: "price_1RNgceIgygwzwsyeqvc20c48",
     mainProductUrl: "",
-    discordUrl: "",
     checklistUrl: "",
     routineUrl: "",
   };

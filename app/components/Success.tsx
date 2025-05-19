@@ -18,7 +18,7 @@ export default function Success() {
             <a href={siteConfig.mainProductUrl} className="btn btn-primary btn-lg rounded-full text-white">
               👉 START THE 17-STEP FORMULA
             </a>
-
+{/* 
             <a href={siteConfig.discordUrl} className="btn btn-outline btn-lg rounded-full text-white border-gray-600">
               💬 JOIN THE DISCORD COMMUNITY
             </a>
@@ -31,7 +31,7 @@ export default function Success() {
               ✅ PHOTO POSTING CHECKLIST
             </a>
 
-            
+            */}
           </div>
         </div>
       </div>
