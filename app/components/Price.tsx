@@ -48,7 +48,7 @@ export default function Price() {
                         <p className="text-xl font-semibold">
                           The 17 Step Jawline Formula Video Course
                         </p>
-                        <p className="text-lightgray mt-1">The complete formula to transform from soft to sculpted - in minutes a day. Step-by-step, no fluff <span className="italic">($149 value)</span></p>
+                        <p className="text-lightgray mt-1">The complete formula to transform from soft to sculpted - in minutes a day. Step-by-step, no fluff</p>
                       </div>
                     </div>
                   </div>
@@ -61,12 +61,12 @@ export default function Price() {
                         <p className="text-xl font-semibold">
                           BONUS I – 10min/day Personalized Jawline Sculpting Routine
                         </p>
-                        <p className="text-lightgray mt-1">Adjusted to your starting point so you never pleateau, waste time or risk injury <span className="italic">($79 value)</span></p>
+                        <p className="text-lightgray mt-1">Adjusted to your starting point so you never pleateau, waste time or risk injury</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* BONUS 2 */}
+                  {/* BONUS 2 
                   <div className="flex flex-col">
                     <div className="flex items-start gap-3">
                       <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mt-1" />
@@ -78,6 +78,7 @@ export default function Price() {
                       </div>
                     </div>
                   </div>
+                  */}
 
                    {/* BONUS 3 
                    <div className="flex flex-col">
@@ -99,24 +100,24 @@ export default function Price() {
                       <img src="icons/green-tick.png" alt="Tick" className="w-5 h-5 mt-1" />
                       <div>
                         <p className="text-xl font-semibold">
-                          BONUS III – Male Model Photo Checklist
+                          BONUS II – Male Model Photo Checklist
                         </p>
-                        <p className="text-lightgray mb-6 mt-1">Use proven angles, poses, and lighting tricks to look 10x better in photos - for dating or socials <span className="italic">($55 value)</span></p>
+                        <p className="text-lightgray mb-6 mt-1">Use proven angles, poses, and lighting tricks to look 10x better in photos - for dating or socials</p>
                       </div>
                     </div>
                   </div>
-
+  {/* 
                   <p className="text-center text-xl">
                     Total Value: <span className="text-red-500 text-xl font-bold">&nbsp;$332</span>
                   </p>
-
                   <p className="text-center text-2xl text-white">
                   <span className="text-xl">*</span><span className="underline">Today's Offer:</span> <span className="text-secondary text-3xl font-bold ">&nbsp;{siteConfig.discountedPrice}</span>
                 </p>
+                
                 <p className="text-sm  text-center text-lightgray italic mt-2">
                 *offer is limited and can end at any time
                   </p>
-
+ */}
                   </div>
                 
 

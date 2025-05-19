@@ -53,7 +53,7 @@ export default function Hero() {
             Transform Your Jawline in Weeks, Not Months
           </h1>
           <p className="py-6 text-lg lg:text-lg text-lightgray -mb-2 -mt-0 lg:mt-6">
-          Everything you need to get your sharpest jawline — and catch eyes everywhere you go
+          The 17 Step Formula to get your sharpest jawline — and catch eyes everywhere you go
           </p>
 
           {/* 

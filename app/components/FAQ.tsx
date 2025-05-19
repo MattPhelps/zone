@@ -25,7 +25,6 @@ export default function FAQ() {
                   <li>• BONUS – 6 Mins a Day Personalised Jawline Workout Routine</li>
                   <li>• BONUS II – Lifetime Access to the Jawline Discord Community</li>
                   <li>• BONUS III – Jawline Photo Guide</li>
-                  <li>• BONUS IV – Access to 4 Facial Analysis Softwares</li>
                 </ol>
             </div>
           </div>
