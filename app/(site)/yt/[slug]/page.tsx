@@ -15,6 +15,12 @@ const redirectMap: Record<string, string> = {
   // Add more as needed
 };
 
+type PageProps = {
+  params: {
+    slug: string;
+  };
+};
+
 export default function YoutubeRedirectPage({ params }: { params: { slug: string } }) {
   const dest = redirectMap[params.slug];
 
