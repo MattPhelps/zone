@@ -59,6 +59,11 @@ const nextConfig: NextConfig = {
         destination: "/?utm_source=youtube&utm_campaign=daily_routine_get_you_lean",
         permanent: true,
       },
+      {
+        source: "/l",
+        destination: "/?utm_source=youtube&utm_campaign=channel_page",
+        permanent: true,
+      },
     ];
   },
 };
