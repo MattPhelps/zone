@@ -1,12 +1,6 @@
-import { redirect } from "next/navigation";
-import type { Metadata } from "next";
+import { redirect, notFound } from "next/navigation";
 
-// Optional: prevent metadata warnings
-export const metadata: Metadata = {
-  title: "Redirecting...",
-  description: "Redirecting to the correct UTM link.",
-};
-
+// Clean redirect map for YouTube slugs
 const redirectMap: Record<string, string> = {
   a: "/?utm_source=youtube&utm_campaign=tighten_your_jawline_mpr",
   b: "/?utm_source=youtube&utm_campaign=one_exercise_unlocks_mewing",
@@ -21,18 +15,14 @@ const redirectMap: Record<string, string> = {
   k: "/?utm_source=youtube&utm_campaign=daily_routine_get_you_lean",
 };
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function Page({ params }: PageProps) {
+// ✅ Do not annotate with a custom `PageProps` type.
+// ✅ Let Next.js infer the correct types.
+export default function Page({ params }: { params: { slug: string } }) {
   const dest = redirectMap[params.slug];
 
-  if (dest) {
-    redirect(dest);
-  } else {
-    redirect("/"); // or use notFound() from "next/navigation"
+  if (!dest) {
+    notFound(); // Optional: or redirect("/")
   }
+
+  redirect(dest);
 }
