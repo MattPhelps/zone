@@ -11,7 +11,7 @@ export default function Success() {
           </h1>
 
           <p className="py-6 text-lg text-lightgray">
-            You'll find everything you need below. I've also sent everything to your email.
+            Everything you need has been sent to your inbox.
           </p>
 
           <div className="flex flex-col space-y-4 mt-10">

@@ -31,6 +31,10 @@ export default function Home() {
 {/*
       <Comparison />
       <BeforeAfter />
+      About me section
+      The 17 steps courses curriculum
+      Course package, exactly what you get - miss excel
+      Who the 17 steps is for
      
 */}
    </>
