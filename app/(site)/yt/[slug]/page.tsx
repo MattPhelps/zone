@@ -1,6 +1,6 @@
-// app/(site)/yt/[slug]/page.tsx
 import { redirect, notFound } from "next/navigation";
 
+// Clean mapping of YouTube slugs to UTM-tracked URLs
 const redirectMap: Record<string, string> = {
   a: "/?utm_source=youtube&utm_campaign=tighten_your_jawline_mpr",
   b: "/?utm_source=youtube&utm_campaign=one_exercise_unlocks_mewing",
@@ -15,12 +15,13 @@ const redirectMap: Record<string, string> = {
   k: "/?utm_source=youtube&utm_campaign=daily_routine_get_you_lean",
 };
 
+// ✅ Do NOT add 'async' here
 export default function Page({ params }: { params: { slug: string } }) {
   const dest = redirectMap[params.slug];
-
-  if (!dest) {
-    notFound();
-  }
-
+  if (!dest) notFound();
   redirect(dest);
+}
+
+export function generateStaticParams() {
+  return Object.keys(redirectMap).map((slug) => ({ slug }));
 }
