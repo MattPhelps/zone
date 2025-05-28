@@ -60,7 +60,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/l",
+        source: "/cp",
         destination: "/?utm_source=youtube&utm_campaign=channel_page",
         permanent: true,
       },
