@@ -1,4 +1,3 @@
-// app/(site)/yt/[slug]/page.tsx
 import { redirect, notFound } from "next/navigation";
 
 const redirectMap: Record<string, string> = {
