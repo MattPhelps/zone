@@ -22,6 +22,7 @@ export default function Home() {
   return (
    <>
       <Hero />  
+{/*    What you get           */}
       <Story />
       <Price />
       <Guarantee />
