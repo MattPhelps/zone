@@ -12,7 +12,6 @@ const redirectMap: Record<string, string> = {
   i: "/?utm_source=youtube&utm_campaign=how_to_do_mewing_tongue_posture",   
   j: "/?utm_source=youtube&utm_campaign=2_ways_to_know_your_mewing_correctly",   
   k: "/?utm_source=youtube&utm_campaign=daily_routine_get_you_lean",   
-  // Add more as needed
 };
 
 type PageProps = {
