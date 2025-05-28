@@ -1,7 +1,7 @@
-import { Metadata } from "next";
 import FAQ from "@/app/components/FAQ";
+import { Metadata } from "next";
 
-const title = "FAQ";
+const title = "Purchase Failed";
 const description = "";
 
 export const metadata: Metadata = {
