@@ -1,3 +1,4 @@
+// app/(site)/yt/[slug]/page.tsx
 import { redirect, notFound } from "next/navigation";
 
 const redirectMap: Record<string, string> = {
@@ -16,6 +17,10 @@ const redirectMap: Record<string, string> = {
 
 export default function Page({ params }: { params: { slug: string } }) {
   const dest = redirectMap[params.slug];
-  if (!dest) notFound();
+
+  if (!dest) {
+    notFound();
+  }
+
   redirect(dest);
 }
