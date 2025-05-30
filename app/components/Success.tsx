@@ -7,7 +7,7 @@ export default function Success() {
       <div className="hero-content text-center">
         <div className="max-w-2xl w-full">
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-            You’re In — Let’s Sculpt That Jawline
+            ✅ Order Confirmed!
           </h1>
 
           <p className="py-6 text-lg text-lightgray">
@@ -15,9 +15,11 @@ export default function Success() {
           </p>
 
           <div className="flex flex-col space-y-4 mt-10">
+            {/* 
             <a href={siteConfig.mainProductUrl} className="btn btn-primary btn-lg rounded-full text-white">
               👉 START THE 17-STEP FORMULA
             </a>
+
 {/* 
             <a href={siteConfig.discordUrl} className="btn btn-outline btn-lg rounded-full text-white border-gray-600">
               💬 JOIN THE DISCORD COMMUNITY
