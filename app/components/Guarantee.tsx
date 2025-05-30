@@ -9,7 +9,7 @@ export default function Guarantee() {
     <div className="text-white bg-background py-16 px-6 flex flex-col items-center justify-center">
       {/* HEADLINE */}
       <h1 className="text-3xl lg:text-5xl font-bold text-center mb-12">
-      Unlock the Formula Today - 100% Risk Free
+      Full Refund <span className="underline">Anytime</span>
       </h1>
 
       {/* IMAGE + TEXT SIDE BY SIDE */}
