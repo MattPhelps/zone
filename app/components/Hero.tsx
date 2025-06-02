@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="max-w-2xl">
         <ReviewBox />
           <h1 className="text-3xl mt-6 lg:mt-10 lg:text-5xl font-bold">
-            Transform Your Jawline in Weeks, Not Months
+            Transform Your Jawline in Weeks, Not Years
           </h1>
           <p className="py-6 text-lg lg:text-lg text-lightgray -mb-2 -mt-0 lg:mt-6">
           The 17 Step Formula to get your sharpest jawline — and catch eyes everywhere you go
