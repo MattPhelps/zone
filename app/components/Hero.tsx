@@ -59,13 +59,19 @@ export default function Hero() {
           {/* 
           < VideoPlayer />
           */} 
+           
+           <div className="mt-4 flex flex-col items-center space-y-2">
+              <span className="mb-4 text-4xl font-bold text-primary">
+                {siteConfig.discountedPrice}
+              </span>
+              <button
+                onClick={handleClick}
+                className="btn btn-primary btn-lg rounded-full text-white"
+              >
+                GET INSTANT ACCESS <span className="text-lg">→</span>
+              </button>
+            </div>
 
-          <button
-            onClick={handleClick}
-            className="btn btn-primary btn-lg rounded-full text-white mt-6"
-          >
-            GET INSTANT ACCESS <span className="text-lg">→</span>
-          </button>
  {/* 
           <div className="flex items-center justify-center mt-6 text-sm text-lightgray">
             <img src="icons/present.png" alt="present" className="w-5 h-5 mr-2" />
