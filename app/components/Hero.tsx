@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 lg:pt-0">
+    <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 -pt-24 lg:pt-0">
       <div className="text-center max-w-3xl w-full">
         <ReviewBox />
 
