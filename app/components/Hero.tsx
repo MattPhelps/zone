@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 pt-10 lg:pt-0">
+    <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 lg:pt-0">
       <div className="text-center max-w-3xl w-full">
         <ReviewBox />
 
@@ -41,7 +41,7 @@ export default function Hero() {
 
           <button
             onClick={handleClick}
-            className="btn btn-primary btn-lg rounded-full text-white px-8 py-3"
+            className="btn mt-8 btn-primary btn-lg rounded-full text-white px-8 py-3"
           >
             GET INSTANT ACCESS <span className="text-lg ml-1">→</span>
           </button>

@@ -22,7 +22,7 @@ export default function VideoPlayer() {
       className="relative w-full max-w-3xl mx-auto aspect-video rounded-xl overflow-hidden shadow-xl"
       style={{ '--plyr-color-main': '#1F58D0' } as React.CSSProperties}
     >
-      <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="BkH1FcR5uew"></div>
+      <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="pZB2Z8h7UrU"></div>
     </div>
   )
 }
