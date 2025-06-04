@@ -130,7 +130,7 @@ export default function Price() {
                 </button>
 
                 <p className="text-sm mt-4 text-center text-lightgray">
-                🔒 Try it risk-free. Full refund anytime.
+                🔒 Full refund anytime
                 </p>
               </div>
 

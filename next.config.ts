@@ -60,6 +60,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/l",
+        destination: "/?utm_source=youtube&utm_campaign=gonial_angle_test",
+        permanent: true,
+      },
+      {
         source: "/cp",
         destination: "/?utm_source=youtube&utm_campaign=channel_page",
         permanent: true,

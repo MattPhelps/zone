@@ -26,10 +26,10 @@ export default function Guarantee() {
         {/* TEXT */}
         <div >
           <p className="py-4 text-md lg:text-lg text-lightgray text-left lg:text-left max-w-lg">
-          I so strongly believe that the Jawline Formula will revolutionize your looks - just like it has for {siteConfig.buyerCount} other men around the world - that I give you a 100% no questions asked money-back guarantee.
+          I so strongly believe that the Jawline Formula will improve your jawline - just like it has for {siteConfig.buyerCount} other men around the world - that I give you a 100% no questions asked money-back guarantee.
           </p>
           <p className="py-4 text-md lg:text-lg text-lightgray text-lwft lg:text-left max-w-lg">
-          I guarantee you that the Jawline Formula will help you reach your goals 3-4x faster than normal.
+          I <i>guarantee</i> you that the Jawline Formula will help you reach your goals 3-4x faster than normal.
           </p>
         </div>
       </div>
