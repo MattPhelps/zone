@@ -18,7 +18,7 @@ export default function Story() {
     <div id="cta" className="hero bg-background flex items-center justify-center">
         <div className="hero-content text-center">
           <div className="max-w-2xl"> {/* Changed from max-w-md to max-w-lg */}
-            <h2 className="mt-20 text-white text-3xl lg:text-5xl font-bold">Most Men Will Never Reach Their True Potential...</h2>
+            <h2 className="mt-40 text-white text-3xl lg:text-5xl font-bold">Most Men Will Never Reach Their True Potential...</h2>
             
             <img
               src="transformations/my-transformation.png" // Put the correct path to your image
