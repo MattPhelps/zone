@@ -69,6 +69,16 @@ const nextConfig: NextConfig = {
         destination: "/?utm_source=youtube&utm_campaign=channel_page",
         permanent: true,
       },
+      {
+        source: "/m",
+        destination: "/?utm_source=youtube&utm_campaign=short_jawline_angle",
+        permanent: true,
+      },
+      {
+        source: "/n",
+        destination: "/?utm_source=youtube&utm_campaign=measure_your_jawline_angle",
+        permanent: true,
+      },
     ];
   },
 };
