@@ -79,6 +79,11 @@ const nextConfig: NextConfig = {
         destination: "/?utm_source=youtube&utm_campaign=measure_your_jawline_angle",
         permanent: true,
       },
+      {
+        source: "/o",
+        destination: "/?utm_source=youtube&utm_campaign=stop_pushing_mewing",
+        permanent: true,
+      },
     ];
   },
 };
