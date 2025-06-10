@@ -84,6 +84,11 @@ const nextConfig: NextConfig = {
         destination: "/?utm_source=youtube&utm_campaign=stop_pushing_mewing",
         permanent: true,
       },
+        {
+        source: "/p",
+        destination: "/?utm_source=youtube&utm_campaign=2_mewing_tests",
+        permanent: true,
+      },
     ];
   },
 };
