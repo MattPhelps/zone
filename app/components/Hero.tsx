@@ -31,7 +31,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-8">
-          <VideoPlayer />
+          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=pZB2Z8h7UrU" />
         </div>
 
         <div className="mt-8 flex flex-col items-center space-y-4">

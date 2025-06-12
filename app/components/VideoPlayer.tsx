@@ -3,9 +3,18 @@
 import { useEffect } from 'react'
 import 'plyr/dist/plyr.css'
 
-export default function VideoPlayer() {
+type VideoPlayerProps = {
+  videoUrl: string
+}
+
+function extractYouTubeID(url: string) {
+  const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/
+  const match = url.match(regex)
+  return match ? match[1] : null
+}
+
+export default function VideoPlayer({ videoUrl }: VideoPlayerProps) {
   useEffect(() => {
-    // Dynamically import Plyr only on the client
     import('plyr').then(({ default: Plyr }) => {
       new Plyr('#player', {
         youtube: {
@@ -17,12 +26,16 @@ export default function VideoPlayer() {
     })
   }, [])
 
+  const videoId = extractYouTubeID(videoUrl)
+
+  if (!videoId) return <p>Invalid video URL</p>
+
   return (
     <div
       className="relative w-full max-w-3xl mx-auto aspect-video rounded-xl overflow-hidden shadow-xl"
       style={{ '--plyr-color-main': '#1F58D0' } as React.CSSProperties}
     >
-      <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="pZB2Z8h7UrU"></div>
+      <div id="player" data-plyr-provider="youtube" data-plyr-embed-id={videoId}></div>
     </div>
   )
 }
