@@ -1,9 +1,7 @@
 'use client'
 
-import ReviewBox from "./ReviewBox";
 import { trackEvent } from "../libs/amplitude";
 import siteConfig from "../libs/siteConfig";
-import VideoPlayer from "./VideoPlayer";
 import { loadStripe } from "@stripe/stripe-js";
 import { useState } from "react";
 
@@ -19,33 +17,26 @@ export default function Hero() {
 
   return (
     <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 lg:pt-0">
-      <div className="text-center max-w-3xl w-full">
-        <ReviewBox />
+     <div className="text-center max-w-3xl w-full">
 
-        <h1 className="text-3xl lg:text-5xl font-bold mt-10">
-          Transform Your Jawline in Weeks, Not Years
+        <h1 className="text-4xl mb-12 lg:text-6xl font-bold">
+          [ZONE]
         </h1>
 
-        <p className="mt-4 lg:mt-6 text-lg lg:text-xl text-lightgray">
-          The 17 Step Formula to get your sharpest jawline — and catch eyes everywhere you go
+        <p className="mt- lg:mt-6 text-xl lg:text-2xl text-white">
+          Boost mental clarity, energy, and focus fast—anywhere you are.
         </p>
 
-        <div className="mt-8">
-          <VideoPlayer videoUrl="https://www.youtube.com/watch?v=pZB2Z8h7UrU" />
-        </div>
+       
 
-        <div className="mt-8 flex flex-col items-center space-y-4">
-          <span className="text-4xl font-bold text-primary">
-            {siteConfig.discountedPrice}
-          </span>
+        <div className="mt-12 flex flex-col text-s items-center">
+  <ul className="flex space-x-4 divide-x divide-white">
+    <li className="pr-4"><a href="/privacy">Privacy</a></li>
+    <li className="px-4"><a href="/terms">Terms</a></li>
+    <li className="pl-4"><a href="mailto:matt@leandme.com">Contact</a></li>
+  </ul>
+</div>
 
-          <button
-            onClick={handleClick}
-            className="btn mt-8 btn-primary btn-lg rounded-full text-white px-8 py-3"
-          >
-            GET INSTANT ACCESS <span className="text-lg ml-1">→</span>
-          </button>
-        </div>
 
         {/*
         // Uncomment this block if needed later

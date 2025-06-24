@@ -1,14 +1,6 @@
 import { Metadata } from "next";
 import Hero from "../components/Hero";
-import FAQ from "../components/FAQ";
-import CTA from "../components/CTA";
-import Comparison from "../components/Comparison";
-import SingleReview from "../components/SingleReview";
-import Story from "../components/Story";
-import BeforeAfter from "../components/BeforeAfter";
-import Transformations from "../components/Transformations";
-import Guarantee from "../components/Guarantee";
-import Price from "../components/Price";
+
 
 const title = "Jawline Formula - The 17 Steps to Get Your Best Jawline";
 const description = "";
@@ -21,23 +13,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
    <>
-      <Hero />  
-{/*    What you get           */}
-      <Story />
-      <Price />
-      <Guarantee />
-      <FAQ />
-      <Transformations />
-      <CTA /> 
-{/*
-      <Comparison />
-      <BeforeAfter />
-      About me section
-      The 17 steps courses curriculum
-      Course package, exactly what you get - miss excel
-      Who the 17 steps is for
-     
-*/}
+      <div className="min-h-screen flex items-center justify-center">
+      <Hero />
+    </div> 
    </>
   );
   
