@@ -16,7 +16,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-background text-white flex items-center justify-center px-4 lg:px-0 lg:pt-0">
+    <section className="w-full h-full bg-background text-white flex items-center justify-center px-4 lg:px-0">
      <div className="text-center max-w-3xl w-full">
 
         <h1 className="text-4xl mb-12 lg:text-6xl font-bold">
